@@ -137,26 +137,37 @@ document.getElementById('generateBtn').addEventListener('click', () => {
         slot.className = 'slot';
 
         // 入力値に含まれている場合のみ抽選・表示
-        if (candidates.length > 0) {
-            const selectedItem = candidates[Math.floor(Math.random() * candidates.length)];
-
-            // 1. 先にテキストの要素を作成して追加する
-            const p = document.createElement('p');
-            p.textContent = selectedItem.text;
-            slot.appendChild(p);
-
-            // 2. 次に画像の要素を作成して追加する
-            if (selectedItem.imagePath) {
-                const img = document.createElement('img');
-                img.src = selectedItem.imagePath;
-                slot.appendChild(img);
+        if (targetNumbers.includes(i)) {
+            let candidates = [];
+            if (i <= 5) {
+                candidates = availablePool.filter(item => item.locations.includes(i));
+            } else if (i <= 10) {
+                candidates = availablePool.filter(item => item.appear6to10);
+            } else {
+                candidates = availablePool.filter(item => item.appear11to15);
             }
 
-            // プールから削除（重複防止）
-            availablePool = availablePool.filter(item => item !== selectedItem);
-        } else {
-            // 該当する候補がない場合は空欄のままにしてスペースを維持
-            // slot.textContent = "候補なし"; などが必要であればここに追加
+            if (candidates.length > 0) {
+                const selectedItem = candidates[Math.floor(Math.random() * candidates.length)];
+
+                // 1. 先にテキストの要素を作成して追加する
+                const p = document.createElement('p');
+                p.textContent = selectedItem.text;
+                slot.appendChild(p);
+
+                // 2. 次に画像の要素を作成して追加する
+                if (selectedItem.imagePath) {
+                    const img = document.createElement('img');
+                    img.src = selectedItem.imagePath;
+                    slot.appendChild(img);
+                }
+
+                // プールから削除（重複防止）
+                availablePool = availablePool.filter(item => item !== selectedItem);
+            } else {
+                // 該当する候補がない場合は空欄のままにしてスペースを維持
+                // slot.textContent = "候補なし"; などが必要であればここに追加
+            }
         }
 
         // 入力値に含まれていない場合でも、空のslotがappendされるので位置がズレない
