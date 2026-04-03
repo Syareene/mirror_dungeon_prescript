@@ -23,8 +23,7 @@
 }
 
 .slot img {
-    width: 150px;
-    /* 画像の幅を150pxに戻す */
+    width: 175px;
     height: auto;
     /* 縦横比は維持する */
     margin-top: 5px;
