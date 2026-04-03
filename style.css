@@ -1,0 +1,26 @@
+.group-container {
+    margin-bottom: 30px;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5列に等分 */
+    gap: 10px;
+    min-height: 150px;
+    /* 画像がない時も高さを確保 */
+}
+
+/* 各スロットのスタイル */
+.slot {
+    border: 1px dashed #ccc;
+    /* 空枠が見えるように点線を表示（不要なら消せます） */
+    padding: 5px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.slot img {
+    max-width: 100%;
+    height: auto;
+}

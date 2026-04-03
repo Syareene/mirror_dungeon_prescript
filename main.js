@@ -110,92 +110,157 @@ const packData = [
     { text: "とある図書館の、ある本の中へ", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/test.png" },
 ];
 
-// 2. ボタンクリック時のイベントリスナー
 document.getElementById('generateBtn').addEventListener('click', () => {
     const inputText = document.getElementById('inputNumbers').value;
     const targetNumbers = parseInput(inputText);
-    const outputArea = document.getElementById('outputArea');
 
-    outputArea.innerHTML = ''; // 前回の結果をクリア
+    // 各グループの表示エリアをクリア
+    const groups = {
+        '1to5': document.querySelector('#group1to5 .slots'),
+        '6to10': document.querySelector('#group6to10 .slots'),
+        '11to15': document.querySelector('#group11to15 .slots')
+    };
+    Object.values(groups).forEach(el => el.innerHTML = '');
 
-    if (targetNumbers.length === 0) {
-        outputArea.innerHTML = '<p>有効な数字（1〜15）が認識できませんでした。</p>';
-        return;
+    let availablePool = sourceData.filter(item => item.isActive);
+
+    // 1から15まで順番に処理
+    for (let i = 1; i <= 15; i++) {
+        // どのグループに所属するか判定
+        let targetGroup;
+        if (i <= 5) targetGroup = groups['1to5'];
+        else if (i <= 10) targetGroup = groups['6to10'];
+        else targetGroup = groups['11to15'];
+
+        // スロット要素を作成
+        const slot = document.createElement('div');
+        slot.className = 'slot';
+
+        // 入力値に含まれている場合のみ抽選・表示
+        if (targetNumbers.includes(i)) {
+            let candidates = [];
+            if (i <= 5) {
+                candidates = availablePool.filter(item => item.locations.includes(i));
+            } else if (i <= 10) {
+                candidates = availablePool.filter(item => item.appear6to10);
+            } else {
+                candidates = availablePool.filter(item => item.appear11to15);
+            }
+
+            if (candidates.length > 0) {
+                const selectedItem = candidates[Math.floor(Math.random() * candidates.length)];
+
+                // 画像の描画
+                if (selectedItem.imagePath) {
+                    const img = document.createElement('img');
+                    img.src = selectedItem.imagePath;
+                    slot.appendChild(img);
+                }
+
+                // テキストの描画
+                const p = document.createElement('p');
+                p.textContent = selectedItem.text;
+                slot.appendChild(p);
+
+                // プールから削除（重複防止）
+                availablePool = availablePool.filter(item => item !== selectedItem);
+            } else {
+                slot.textContent = "候補なし";
+            }
+        }
+
+        // 入力値に含まれていない場合でも、空のslotがappendされるので位置がズレない
+        targetGroup.appendChild(slot);
     }
-
-    // 抽選用のプールを作成（isActiveがtrueのものだけをコピー）
-    let availablePool = packData.filter(item => item.isActive);
-    const results = []; // オブジェクトを保存する
-
-    // パースされた数字ごとに抽選処理を実行
-    for (const num of targetNumbers) {
-        // 現在のプールから条件に合致する候補を絞り込む
-        let candidates = [];
-
-        if (num >= 1 && num <= 5) {
-            candidates = availablePool.filter(item => item.locations.includes(num));
-        } else if (num >= 6 && num <= 10) {
-            candidates = availablePool.filter(item => item.appear6to10 === true);
-        } else if (num >= 11 && num <= 15) {
-            candidates = availablePool.filter(item => item.appear11to15 === true);
-        }
-
-        if (candidates.length > 0) {
-            // 候補の中からランダムに1つ選択
-            const randomIndex = Math.floor(Math.random() * candidates.length);
-            const selectedItem = candidates[randomIndex];
-
-            // 結果にテキストと画像パスの両方を結果に保存
-            results.push({
-                num: num,
-                text: selectedItem.text,
-                imagePath: selectedItem.imagePath,
-                found: true
-            });
-
-
-            //results.push(`…へ。${num}階層目に「${selectedItem.text}」のパックを選ぶ。`);
-
-            // 【重要】一度抽出されたものはプールから削除し、重複を防ぐ
-            availablePool = availablePool.filter(item => item !== selectedItem);
-        } else {
-            // 見つからなかった場合
-            results.push({
-                num: num,
-                text: "該当する文字列、または残りの候補がありません",
-                imagePath: "",
-                found: false
-            });
-        }
-    }
-
-    // 3. 結果の描画
-    results.forEach(result => {
-        // 画像とテキストをまとめるためのdivコンテナを作成
-        const resultContainer = document.createElement('div');
-        // 後でCSSで装飾しやすいようにクラス名を付けておく
-        resultContainer.className = 'result-item';
-        resultContainer.style.marginBottom = '15px'; // 暫定の余白
-
-        if (result.found && result.imagePath) {
-            // 画像要素の作成
-            const img = document.createElement('img');
-            img.src = result.imagePath;
-            img.alt = result.text;
-            img.style.width = '150px'; // 暫定のサイズ（後でCSSで制御します）
-            img.style.display = 'block';
-            resultContainer.appendChild(img);
-        }
-
-        // テキスト要素の作成
-        const p = document.createElement('p');
-        p.textContent = `[入力値 ${result.num}] -> ${result.text}`;
-        resultContainer.appendChild(p);
-
-        // 出力エリアに追加
-        outputArea.appendChild(resultContainer);
-    });
 });
+
+
+// 2. ボタンクリック時のイベントリスナー
+// document.getElementById('generateBtn').addEventListener('click', () => {
+//     const inputText = document.getElementById('inputNumbers').value;
+//     const targetNumbers = parseInput(inputText);
+//     const outputArea = document.getElementById('outputArea');
+
+//     outputArea.innerHTML = ''; // 前回の結果をクリア
+
+//     if (targetNumbers.length === 0) {
+//         outputArea.innerHTML = '<p>有効な数字（1〜15）が認識できませんでした。</p>';
+//         return;
+//     }
+
+//     // 抽選用のプールを作成（isActiveがtrueのものだけをコピー）
+//     let availablePool = packData.filter(item => item.isActive);
+//     const results = []; // オブジェクトを保存する
+
+//     // パースされた数字ごとに抽選処理を実行
+//     for (const num of targetNumbers) {
+//         // 現在のプールから条件に合致する候補を絞り込む
+//         let candidates = [];
+
+//         if (num >= 1 && num <= 5) {
+//             candidates = availablePool.filter(item => item.locations.includes(num));
+//         } else if (num >= 6 && num <= 10) {
+//             candidates = availablePool.filter(item => item.appear6to10 === true);
+//         } else if (num >= 11 && num <= 15) {
+//             candidates = availablePool.filter(item => item.appear11to15 === true);
+//         }
+
+//         if (candidates.length > 0) {
+//             // 候補の中からランダムに1つ選択
+//             const randomIndex = Math.floor(Math.random() * candidates.length);
+//             const selectedItem = candidates[randomIndex];
+
+//             // 結果にテキストと画像パスの両方を結果に保存
+//             results.push({
+//                 num: num,
+//                 text: selectedItem.text,
+//                 imagePath: selectedItem.imagePath,
+//                 found: true
+//             });
+
+
+//             //results.push(`…へ。${num}階層目に「${selectedItem.text}」のパックを選ぶ。`);
+
+//             // 【重要】一度抽出されたものはプールから削除し、重複を防ぐ
+//             availablePool = availablePool.filter(item => item !== selectedItem);
+//         } else {
+//             // 見つからなかった場合
+//             results.push({
+//                 num: num,
+//                 text: "該当する文字列、または残りの候補がありません",
+//                 imagePath: "",
+//                 found: false
+//             });
+//         }
+//     }
+
+//     // 3. 結果の描画
+//     results.forEach(result => {
+//         // 画像とテキストをまとめるためのdivコンテナを作成
+//         const resultContainer = document.createElement('div');
+//         // 後でCSSで装飾しやすいようにクラス名を付けておく
+//         resultContainer.className = 'result-item';
+//         resultContainer.style.marginBottom = '15px'; // 暫定の余白
+
+//         if (result.found && result.imagePath) {
+//             // 画像要素の作成
+//             const img = document.createElement('img');
+//             img.src = result.imagePath;
+//             img.alt = result.text;
+//             img.style.width = '150px'; // 暫定のサイズ（後でCSSで制御します）
+//             img.style.display = 'block';
+//             resultContainer.appendChild(img);
+//         }
+
+//         // テキスト要素の作成
+//         const p = document.createElement('p');
+//         p.textContent = `[入力値 ${result.num}] -> ${result.text}`;
+//         resultContainer.appendChild(p);
+
+//         // 出力エリアに追加
+//         outputArea.appendChild(resultContainer);
+//     });
+// });
 
 // --- ユーティリティ関数 ---
 
