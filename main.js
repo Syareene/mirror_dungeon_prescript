@@ -146,12 +146,12 @@ document.getElementById('generateBtn').addEventListener('click', () => {
             const selectedItem = candidates[randomIndex];
 
             // 結果に保存
-            results.push(`[入力値 ${num}] -> ${selectedItem.text}`);
+            results.push(`…へ。${num}階層目に「${selectedItem.text}」のパックを選ぶ。`);
 
             // 【重要】一度抽出されたものはプールから削除し、重複を防ぐ
             availablePool = availablePool.filter(item => item !== selectedItem);
         } else {
-            results.push(`[入力値 ${num}] -> 該当する文字列、または残りの候補がありません`);
+            results.push(`${num}階層目: 該当する文字列、または残りの候補がありません`);
         }
     }
 
