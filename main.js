@@ -122,7 +122,7 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     };
     Object.values(groups).forEach(el => el.innerHTML = '');
 
-    let availablePool = sourceData.filter(item => item.isActive);
+    let availablePool = packData.filter(item => item.isActive);
 
     // 1から15まで順番に処理
     for (let i = 1; i <= 15; i++) {
