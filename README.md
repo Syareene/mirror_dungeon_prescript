@@ -1,0 +1,2 @@
+# mirror_dungeon_prescript
+指定した階層のランダムなパックを抽選し司令として出すジェネレーター
