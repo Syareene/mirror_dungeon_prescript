@@ -29,3 +29,20 @@
     margin-top: 5px;
     /* テキストとの間に少しだけ余白を入れる */
 }
+
+/* スロット内のテキスト(pタグ)のスタイル指定 */
+.slot p {
+    height: 60px;
+    /* テキストエリアの高さを固定（長い文字に合わせて数値を調整してください） */
+    margin: 0 0 10px 0;
+    /* 画像との間に10pxの余白を設ける */
+
+    /* ※以下はオプション（文字列が枠に収まりきらない場合の処理） */
+    overflow: hidden;
+    /* 枠からはみ出た部分を隠す */
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    /* 最大3行まで表示し、それ以上は「...」で省略する */
+    -webkit-box-orient: vertical;
+}
