@@ -32,17 +32,17 @@
 
 /* スロット内のテキスト(pタグ)のスタイル指定 */
 .slot p {
+    /* 前回の設定：画像の位置を揃えるために高さは維持する */
     height: 60px;
-    /* テキストエリアの高さを固定（長い文字に合わせて数値を調整してください） */
     margin: 0 0 10px 0;
-    /* 画像との間に10pxの余白を設ける */
 
-    /* ※以下はオプション（文字列が枠に収まりきらない場合の処理） */
-    overflow: hidden;
-    /* 枠からはみ出た部分を隠す */
-    display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    /* 最大3行まで表示し、それ以上は「...」で省略する */
-    -webkit-box-orient: vertical;
+    /* 追加：中身の文字を「下揃え」にする設定 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* これで文字が下（画像側）に沈みます */
+
+    /* 横方向の中央揃えも維持 */
+    align-items: center;
+    text-align: center;
 }
