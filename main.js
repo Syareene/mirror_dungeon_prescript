@@ -110,6 +110,8 @@ const packData = [
     { text: "とある図書館の、ある本の中へ", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/certain_book.png" },
 ];
 
+let lastResultText = ""; // 最後に抽出された結果を保存する変数
+
 document.getElementById('generateBtn').addEventListener('click', () => {
     const inputText = document.getElementById('inputNumbers').value;
     const targetNumbers = parseInput(inputText);
@@ -127,6 +129,7 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     Object.values(groups).forEach(el => el.innerHTML = '');
 
     let availablePool = packData.filter(item => item.isActive);
+    let resultLog = []; // テキスト保存用
 
     // 1から15まで順番に処理
     for (let i = 1; i <= 15; i++) {
@@ -166,6 +169,9 @@ document.getElementById('generateBtn').addEventListener('click', () => {
                     slot.appendChild(img);
                 }
 
+                // テキストログに保存
+                resultLog.push(`${i}層目: ${selectedItem.text}`);
+
                 // プールから削除（重複防止）
                 availablePool = availablePool.filter(item => item !== selectedItem);
             } else {
@@ -178,96 +184,41 @@ document.getElementById('generateBtn').addEventListener('click', () => {
         targetGroup.appendChild(slot);
     }
 
+    // シェア用テキストの作成
+    // テキストを整形して変数に保存
+    if (resultLog.length > 0) {
+        lastResultText = "名と蜘蛛の鏡 パック抽出結果\n" + resultLog.join("\n");
+    } else {
+        lastResultText = "";
+    }
+
     // アニメーション関数を呼び出す
     playScrambleAnimation(animatedText, "管理人へ。下記のパックを選択しクリアすること。");
 });
 
+// --- ボタンの動作定義 ---
 
-// 2. ボタンクリック時のイベントリスナー
-// document.getElementById('generateBtn').addEventListener('click', () => {
-//     const inputText = document.getElementById('inputNumbers').value;
-//     const targetNumbers = parseInput(inputText);
-//     const outputArea = document.getElementById('outputArea');
+// コピー機能
+document.getElementById('copyBtn').addEventListener('click', () => {
+    if (!lastResultText) {
+        alert("先に抽出を行ってください。");
+        return;
+    }
+    navigator.clipboard.writeText(lastResultText).then(() => {
+        alert("クリップボードにコピーしました！");
+    });
+});
 
-//     outputArea.innerHTML = ''; // 前回の結果をクリア
-
-//     if (targetNumbers.length === 0) {
-//         outputArea.innerHTML = '<p>有効な数字（1〜15）が認識できませんでした。</p>';
+// X (Twitter) シェア機能
+// document.getElementById('shareBtn').addEventListener('click', () => {
+//     if (!lastResultText) {
+//         alert("先に抽出を行ってください。");
 //         return;
 //     }
-
-//     // 抽選用のプールを作成（isActiveがtrueのものだけをコピー）
-//     let availablePool = packData.filter(item => item.isActive);
-//     const results = []; // オブジェクトを保存する
-
-//     // パースされた数字ごとに抽選処理を実行
-//     for (const num of targetNumbers) {
-//         // 現在のプールから条件に合致する候補を絞り込む
-//         let candidates = [];
-
-//         if (num >= 1 && num <= 5) {
-//             candidates = availablePool.filter(item => item.locations.includes(num));
-//         } else if (num >= 6 && num <= 10) {
-//             candidates = availablePool.filter(item => item.appear6to10 === true);
-//         } else if (num >= 11 && num <= 15) {
-//             candidates = availablePool.filter(item => item.appear11to15 === true);
-//         }
-
-//         if (candidates.length > 0) {
-//             // 候補の中からランダムに1つ選択
-//             const randomIndex = Math.floor(Math.random() * candidates.length);
-//             const selectedItem = candidates[randomIndex];
-
-//             // 結果にテキストと画像パスの両方を結果に保存
-//             results.push({
-//                 num: num,
-//                 text: selectedItem.text,
-//                 imagePath: selectedItem.imagePath,
-//                 found: true
-//             });
-
-
-//             //results.push(`…へ。${num}階層目に「${selectedItem.text}」のパックを選ぶ。`);
-
-//             // 【重要】一度抽出されたものはプールから削除し、重複を防ぐ
-//             availablePool = availablePool.filter(item => item !== selectedItem);
-//         } else {
-//             // 見つからなかった場合
-//             results.push({
-//                 num: num,
-//                 text: "該当する文字列、または残りの候補がありません",
-//                 imagePath: "",
-//                 found: false
-//             });
-//         }
-//     }
-
-//     // 3. 結果の描画
-//     results.forEach(result => {
-//         // 画像とテキストをまとめるためのdivコンテナを作成
-//         const resultContainer = document.createElement('div');
-//         // 後でCSSで装飾しやすいようにクラス名を付けておく
-//         resultContainer.className = 'result-item';
-//         resultContainer.style.marginBottom = '15px'; // 暫定の余白
-
-//         if (result.found && result.imagePath) {
-//             // 画像要素の作成
-//             const img = document.createElement('img');
-//             img.src = result.imagePath;
-//             img.alt = result.text;
-//             img.style.width = '150px'; // 暫定のサイズ（後でCSSで制御します）
-//             img.style.display = 'block';
-//             resultContainer.appendChild(img);
-//         }
-
-//         // テキスト要素の作成
-//         const p = document.createElement('p');
-//         p.textContent = `[入力値 ${result.num}] -> ${result.text}`;
-//         resultContainer.appendChild(p);
-
-//         // 出力エリアに追加
-//         outputArea.appendChild(resultContainer);
-//     });
+//     // URLエンコードしてシェア用URLを作成
+//     const encodedText = encodeURIComponent(lastResultText);
+//     const shareUrl = `https://twitter.com/intent/tweet?text=${encodedText}`;
+//     window.open(shareUrl, '_blank');
 // });
 
 // --- ユーティリティ関数 ---

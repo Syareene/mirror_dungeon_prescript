@@ -27,6 +27,20 @@ h2 {
     letter-spacing: 2px;
 }
 
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* コピーボタン（別の色にする例） */
+#copyBtn {
+    background-color: #c63939;
+    /* 緑寄りの茶色 */
+    border: 1px solid #7d2626;
+}
+
 /* --- 入力欄とボタン --- */
 .input-section {
     display: flex;
