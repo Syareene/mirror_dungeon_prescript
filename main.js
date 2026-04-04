@@ -29,7 +29,7 @@ const packData = [
     { text: "夢の終わる", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/7-3.png" },
     { text: "四大家門と欲望", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/8-1.png" },
     { text: "眺めることしかできない", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/8-2.png" },
-    { text: "幻惑・彷徨・不信", locations: [3,4], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/9-1.png" },
+    { text: "幻惑・彷徨・不信", locations: [3,4], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/main_story/9-1.png" },
     { text: "教本", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/9-2.png" },
     { text: "剣と作品", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/9-3.png" },
     { text: "断ち切れない", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/main_story/9-4.png" },
