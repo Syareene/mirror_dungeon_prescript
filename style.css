@@ -34,7 +34,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* シェアボタン（少し色を変える例） */
+/* シェアボタン */
 #shareBtn {
     background-color: #000000;
     /* Xのイメージカラー */
@@ -45,10 +45,9 @@ h2 {
     background-color: #222;
 }
 
-/* コピーボタン（別の色にする例） */
+/* コピーボタン */
 #copyBtn {
     background-color: #c63939;
-    /* 緑寄りの茶色 */
     border: 1px solid #7d2626;
 }
 
@@ -143,7 +142,7 @@ button:hover {
     overflow: hidden;
 }
 
-/* ★ 重要：無効化された時の見た目 ★ */
+/* 無効化された時の見た目  */
 .pack-item-manage.disabled {
     filter: grayscale(100%) brightness(0.4);
     /* 白黒にして暗くする */
@@ -231,7 +230,6 @@ footer {
     /* 5列固定。min-width: 0 を指定して中身による幅の拡張を防ぐ */
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
-    /* 間隔を詰めました */
 }
 
 .slot {
@@ -248,13 +246,12 @@ footer {
     box-shadow: none;
     /* 影を削除 */
     margin: 0;
-    /* 隙間は grid の gap に任せる */
+    /* 隙間はgridのgapに任せる */
 }
 
 /* スロット内の画像 */
 .slot img {
     width: 130px;
-    /* 少し大きくしました */
     height: auto;
     margin-top: 5px;
     max-width: 100%;

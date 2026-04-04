@@ -1,10 +1,9 @@
-// 1. データの定義
-// 要件に基づくデータ構造。テスト用にいくつかのダミーデータを入れています。
+// このプロジェクトはAIメインでコーディングしています。
+// 各動作の確認や細かい箇所の修正、コードの確認は私自身の手で行っています。
 
-// これisactive保存しちゃってるけどセッションとかクッキーに保存して取得する形になるかもねぇ
+// データの定義
 
-console.log("JSファイルが読み込まれました"); // 読み込み確認ログ
-
+// MDのパックデータを登録。
 const packData = [
     { text: "忘れられた者たち", locations: [1], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/main_story/1-1.png" },
     { text: "属せない", locations: [1], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/main_story/1-2.png" },
@@ -264,8 +263,7 @@ function renderPackList() {
             // isActiveフラグを反転
             pack.isActive = !pack.isActive;
 
-            // 見た目を更新（再描画せずにクラスの付け外しだけで済ませることも可能ですが、
-            // 確実性のために再描画するか、直接クラスを操作します）
+            // 見た目を更新
             if (pack.isActive) {
                 item.classList.remove('disabled');
             } else {
