@@ -112,6 +112,35 @@ const packData = [
 
 let lastResultText = ""; // 最後に抽出された結果を保存する変数
 
+// --- localStorage 用のキー ---
+const STORAGE_KEY = 'lcb_pack_settings';
+
+// --- 設定の読み込み関数 ---
+function loadSettings() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+        const settings = JSON.parse(saved);
+        // 保存されている設定（パック名: 有効フラグ）を packData に適用
+        packData.forEach(pack => {
+            if (settings.hasOwnProperty(pack.text)) {
+                pack.isActive = settings[pack.text];
+            }
+        });
+    }
+}
+
+// --- 設定の保存関数 ---
+function saveSettings() {
+    const settings = {};
+    packData.forEach(pack => {
+        settings[pack.text] = pack.isActive;
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+}
+
+// ページ読み込み時に設定を適用
+loadSettings();
+
 document.getElementById('generateBtn').addEventListener('click', () => {
     const inputText = document.getElementById('inputNumbers').value;
     const targetNumbers = parseInput(inputText);
@@ -195,6 +224,63 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     // アニメーション関数を呼び出す
     playScrambleAnimation(animatedText, "管理人へ。下記のパックを選択しクリアすること。");
 });
+
+// --- パック管理機能のロジック ---
+
+// 表示切り替えボタンのイベント
+document.getElementById('toggleListBtn').addEventListener('click', () => {
+    const container = document.getElementById('packListContainer');
+    if (container.style.display === 'none') {
+        container.style.display = 'block';
+        renderPackList(); // 表示する際に一覧を最新化
+    } else {
+        container.style.display = 'none';
+    }
+});
+
+// パック一覧を生成して描画する関数
+function renderPackList() {
+    const grid = document.getElementById('packListGrid');
+    grid.innerHTML = ''; // 一度リセット
+
+    packData.forEach((pack, index) => {
+        const item = document.createElement('div');
+        item.className = 'pack-item-manage' + (pack.isActive ? '' : ' disabled');
+
+        // 画像
+        const img = document.createElement('img');
+        img.src = pack.imagePath;
+        img.alt = pack.text;
+
+        // テキスト
+        const p = document.createElement('p');
+        p.textContent = pack.text;
+
+        item.appendChild(img);
+        item.appendChild(p);
+
+        // クリック時の切り替え処理
+        item.onclick = () => {
+            // isActiveフラグを反転
+            pack.isActive = !pack.isActive;
+
+            // 見た目を更新（再描画せずにクラスの付け外しだけで済ませることも可能ですが、
+            // 確実性のために再描画するか、直接クラスを操作します）
+            if (pack.isActive) {
+                item.classList.remove('disabled');
+            } else {
+                item.classList.add('disabled');
+            }
+
+            // 設定をlocalStorageに保存
+            saveSettings();
+        };
+
+        grid.appendChild(item);
+    });
+}
+
+
 
 // --- ボタンの動作定義 ---
 

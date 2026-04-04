@@ -94,6 +94,62 @@ button:hover {
     background-color: #5d4037;
 }
 
+/* --- パック管理パネルのスタイル --- */
+#packListContainer {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #4e342e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#packListGrid {
+    display: grid;
+    /* 管理画面は少し小さめに、多数並べる */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    max-height: 400px;
+    /* 長くなりすぎないよう固定高にしてスクロールさせる */
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.pack-item-manage {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.pack-item-manage:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.pack-item-manage img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pack-item-manage p {
+    font-size: 0.7em;
+    margin-top: 5px;
+    color: #ccc;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ★ 重要：無効化された時の見た目 ★ */
+.pack-item-manage.disabled {
+    filter: grayscale(100%) brightness(0.4);
+    /* 白黒にして暗くする */
+    opacity: 0.5;
+}
+
 /* --- アニメーションエリア --- */
 #animationContainer {
     height: 45px;
