@@ -1,48 +1,51 @@
+#outputArea {
+    max-width: 800px;
+    /* ここで全体の最大幅を制限します */
+    margin: 0 auto;
+    /* 左右の余白を自動調整し、中央揃えにします */
+}
+
 .group-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    /* 少し余白を詰めます */
 }
 
 .slots {
     display: grid;
-    /* 横に5列（1fr = 均等な幅）並べる指定 */
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    min-height: 150px;
+    gap: 8px;
+    /* 隙間も少し狭くします */
+    min-height: 100px;
+    /* 全体が小さくなるため最小の高さも調整 */
 }
 
 .slot {
     border: 1px dashed #ccc;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    min-height: 100px;
-
-    /* 枠内の要素（テキストと画像）を縦並びにし、中央に揃える */
+    min-height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .slot img {
-    width: 175px;
+    width: 115px;
+    /* 175px の約2/3に縮小 */
     height: auto;
-    /* 縦横比は維持する */
     margin-top: 5px;
-    /* テキストとの間に少しだけ余白を入れる */
 }
 
-/* スロット内のテキスト(pタグ)のスタイル指定 */
 .slot p {
-    /* 前回の設定：画像の位置を揃えるために高さは維持する */
-    height: 60px;
-    margin: 0 0 10px 0;
+    height: 40px;
+    /* 画像縮小に伴い、テキストエリアの高さも調整 */
+    margin: 0 0 5px 0;
+    font-size: 0.85em;
+    /* 文字サイズも少し小さくします */
 
-    /* 追加：中身の文字を「下揃え」にする設定 */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* これで文字が下（画像側）に沈みます */
-
-    /* 横方向の中央揃えも維持 */
     align-items: center;
     text-align: center;
 }
