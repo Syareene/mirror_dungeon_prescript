@@ -210,16 +210,16 @@ document.getElementById('copyBtn').addEventListener('click', () => {
 });
 
 // X (Twitter) シェア機能
-// document.getElementById('shareBtn').addEventListener('click', () => {
-//     if (!lastResultText) {
-//         alert("先に抽出を行ってください。");
-//         return;
-//     }
-//     // URLエンコードしてシェア用URLを作成
-//     const encodedText = encodeURIComponent(lastResultText);
-//     const shareUrl = `https://twitter.com/intent/tweet?text=${encodedText}`;
-//     window.open(shareUrl, '_blank');
-// });
+document.getElementById('shareBtn').addEventListener('click', () => {
+
+    // URLエンコードしてシェア用URLを作成
+
+    // シェア用テキストを作成
+    const shareText = "名と蜘蛛の鏡 パック抽出ジェネレーター\nhttps://syareene.github.io/mirror_dungeon_prescript/ \n\n#LimbusCompany #LCBパック抽出ジェネレーター";
+    const encodedText = encodeURIComponent(shareText);
+    const shareUrl = `https://twitter.com/intent/tweet?text=${encodedText}`;
+    window.open(shareUrl, '_blank');
+});
 
 // --- ユーティリティ関数 ---
 
