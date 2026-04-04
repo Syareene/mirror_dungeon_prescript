@@ -114,6 +114,10 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     const inputText = document.getElementById('inputNumbers').value;
     const targetNumbers = parseInput(inputText);
 
+    // アニメーションエリアと出力エリアを初期化
+    const animatedText = document.getElementById('animatedText');
+    animatedText.textContent = ''; // 前回の文字を消す
+
     // 各グループの表示エリアをクリア
     const groups = {
         '1to5': document.querySelector('#group1to5 .slots'),
@@ -173,6 +177,9 @@ document.getElementById('generateBtn').addEventListener('click', () => {
         // 入力値に含まれていない場合でも、空のslotがappendされるので位置がズレない
         targetGroup.appendChild(slot);
     }
+
+    // アニメーション関数を呼び出す
+    playScrambleAnimation(animatedText, "管理人へ。下記のパックを選択しクリアすること。");
 });
 
 
@@ -300,4 +307,37 @@ function parseInput(inputStr) {
 
     // Setを配列に変換し、小さい順にソートして返す
     return Array.from(resultList).sort((a, b) => a - b);
+}
+
+// --- 文字列アニメーション演出関数 ---
+// targetElement: テキストを表示するHTML要素 (pタグやdivなど)
+// finalString: 最終的に表示させたい文字列
+function playScrambleAnimation(targetElement, finalString) {
+    // 演出に使うランダムな文字の候補（記号や英数字などお好みで変更可）
+    const chars = "!<>-_\\/[]{}—=+*^?#@$%&1234567890";
+    let frame = 0;
+    const maxFrames = 20; // 演出の長さ（フレーム数）
+
+    // setIntervalで定期的に文字を書き換えるループ処理を生成
+    const intervalId = setInterval(() => {
+        let currentString = "";
+
+        for (let i = 0; i < finalString.length; i++) {
+            // 文字列の前半から徐々に確定させていくロジック
+            if (i < frame) {
+                currentString += finalString[i];
+            } else {
+                currentString += chars[Math.floor(Math.random() * chars.length)];
+            }
+        }
+
+        targetElement.textContent = currentString;
+
+        if (frame >= finalString.length) {
+            clearInterval(intervalId); // 全ての文字が確定したらループを停止
+            targetElement.textContent = finalString; // 念のため最終的な文字列をセット
+        }
+
+        frame += 1 / 3; // 1フレームあたりの文字確定スピード（数値を上げると早くなる）
+    }, 30); // 30ミリ秒ごとに更新
 }

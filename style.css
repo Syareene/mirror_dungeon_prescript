@@ -1,47 +1,156 @@
+/* --- 全体設定 --- */
+body {
+    background-color: #1a0505;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- 見出し --- */
+h1 {
+    color: #ffffff;
+    text-shadow:
+        -3px 0px 1.5px rgba(255, 0, 0, 0.9),
+        3px 0px 1.5px rgba(0, 255, 255, 0.9);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow:
+        0 0 8px rgba(255, 204, 0, 0.8),
+        0 0 15px rgba(255, 102, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* --- 入力欄とボタン --- */
+.input-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+button {
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #4e342e;
+    color: white;
+    padding: 0 10px;
+    width: 300px;
+}
+
+button {
+    background-color: #4e342e;
+    color: white;
+    border: 1px solid #795548;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #5d4037;
+}
+
+/* --- アニメーションエリア --- */
+#animationContainer {
+    height: 45px;
+    /* 高さを固定 */
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#animatedText {
+    color: #00e5ff;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1.2em;
+    text-shadow:
+        0 0 10px rgba(0, 229, 255, 0.9),
+        0 0 20px rgba(0, 184, 212, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: bold;
+    min-height: 1.2em;
+}
+
+/* --- 出力エリア・スロット設定（統合版） --- */
 #outputArea {
-    max-width: 800px;
-    /* ここで全体の最大幅を制限します */
+    max-width: 900px;
+    /* 全体の幅を少し広げて、各スロットに余裕を持たせる */
     margin: 0 auto;
-    /* 左右の余白を自動調整し、中央揃えにします */
 }
 
 .group-container {
     margin-bottom: 20px;
-    /* 少し余白を詰めます */
 }
 
 .slots {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* 5列固定。min-width: 0 を指定して中身による幅の拡張を防ぐ */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
-    /* 隙間も少し狭くします */
-    min-height: 100px;
-    /* 全体が小さくなるため最小の高さも調整 */
+    /* 間隔を詰めました */
 }
 
 .slot {
-    border: 1px dashed #ccc;
-    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px;
     text-align: center;
-    min-height: 80px;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* 赤と青を消し、白の細い線のみに設定 */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: none;
+    /* 影を削除 */
+    margin: 0;
+    /* 隙間は grid の gap に任せる */
 }
 
+/* スロット内の画像 */
 .slot img {
-    width: 115px;
-    /* 175px の約2/3に縮小 */
+    width: 130px;
+    /* 少し大きくしました */
     height: auto;
     margin-top: 5px;
+    max-width: 100%;
+    /* スロットからはみ出さないように制限 */
 }
 
+/* スロット内のテキスト */
 .slot p {
-    height: 40px;
-    /* 画像縮小に伴い、テキストエリアの高さも調整 */
+    height: 45px;
     margin: 0 0 5px 0;
     font-size: 0.85em;
-    /* 文字サイズも少し小さくします */
+    font-weight: bold;
+
+    /* 長い文字が幅を広げないように、強制的に改行させる設定 */
+    width: 100%;
+    word-break: break-all;
+    overflow-wrap: anywhere;
 
     display: flex;
     flex-direction: column;
