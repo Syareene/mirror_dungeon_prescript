@@ -57,6 +57,7 @@ const packData = [
     { text: "琥珀の夕暮", locations: [4, 5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/dusk_amber.png" },
     { text: "LCB定期診断 BokGak", locations: [4,5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/lcb_check_bokgak.png" },
     { text: "縒り合せ", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/twining_threads.png"},
+    { text: "深夜清掃 BokGak", locations: [4, 5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/secret/wip.png" },
     { text: "斬るべきもの", locations: [1, 2], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/slash-1.png" },
     { text: "切り裂く者たち", locations: [4], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/slash-2.png" },
     { text: "貫くべきもの", locations: [1, 2], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/piece-1.png" },
@@ -108,6 +109,17 @@ const packData = [
     { text: "美しい声", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/beautiful_voice.png" },
     { text: "緑の黎明", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/dawn_green.png" },
     { text: "とある図書館の、ある本の中へ", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/certain_book.png" },
+    { text: "コードパープル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "重荷を背負った者たち", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "1号線：狂気", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "祝福のカーニバル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "フェアリーテイル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "血なまぐさい臭い", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "即決処刑の時間", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "ラ・マンチャランドの主", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "挿翅虎", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "とある春の夜の夢2", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "ポン・皇", locations:[3,4,5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/secret/wip.png"},
 ];
 
 let lastResultText = ""; // 最後に抽出された結果を保存する変数
