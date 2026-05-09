@@ -112,13 +112,13 @@ const packData = [
     { text: "コードパープル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
     { text: "重荷を背負った者たち", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
     { text: "1号線：狂気", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
-    { text: "祝福のカーニバル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "祝福のカーニバル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/blessed_carnival.png" },
     { text: "フェアリーテイル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
     { text: "血なまぐさい臭い", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
     { text: "即決処刑の時間", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
-    { text: "ラ・マンチャランドの主", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
-    { text: "挿翅虎", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
-    { text: "とある春の夜の夢2", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "ラ・マンチャランドの主", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/master_of_lamancha.png" },
+    { text: "挿翅虎", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/chachihu.png" },
+    { text: "とある春の夜の夢2", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/midspring_dream_2.png" },
     { text: "ポン・皇", locations:[3,4,5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/secret/wip.png"},
 ];
 
