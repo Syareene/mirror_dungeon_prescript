@@ -119,7 +119,7 @@ const packData = [
     { text: "ラ・マンチャランドの主", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/master_of_lamancha.png" },
     { text: "挿翅虎", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/chachihu.png" },
     { text: "とある春の夜の夢2", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/midspring_dream_2.png" },
-    { text: "ポン・皇", locations:[3,4,5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/secret/wip.png"},
+    { text: "ポン・皇", locations:[3,4,5], appear6to10: true, appear11to15: false, isActive: false, imagePath: "images/secret/wip.png"},
 ];
 
 let lastResultText = ""; // 最後に抽出された結果を保存する変数
