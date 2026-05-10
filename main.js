@@ -57,7 +57,7 @@ const packData = [
     { text: "琥珀の夕暮", locations: [4, 5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/dusk_amber.png" },
     { text: "LCB定期診断 BokGak", locations: [4,5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/lcb_check_bokgak.png" },
     { text: "縒り合せ", locations: [5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/twining_threads.png"},
-    { text: "深夜清掃 BokGak", locations: [4, 5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "深夜清掃 BokGak", locations: [4, 5], appear6to10: true, appear11to15: false, isActive: true, imagePath: "images/event/sweeping_bokgak.png" },
     { text: "斬るべきもの", locations: [1, 2], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/slash-1.png" },
     { text: "切り裂く者たち", locations: [4], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/slash-2.png" },
     { text: "貫くべきもの", locations: [1, 2], appear6to10: false, appear11to15: false, isActive: true, imagePath: "images/affinity/piece-1.png" },
