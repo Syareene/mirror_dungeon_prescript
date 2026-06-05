@@ -113,7 +113,7 @@ const packData = [
     { text: "重荷を背負った者たち", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/bearers_weight.png" },
     { text: "1号線：狂気", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/line1_madness.png" },
     { text: "祝福のカーニバル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/blessed_carnival.png" },
-    { text: "フェアリーテイル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/secret/wip.png" },
+    { text: "フェアリーテイル", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/fairy_tale.png" },
     { text: "血なまぐさい臭い", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/bloodtinged_odor.png" },
     { text: "即決処刑の時間", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/total_extermination.png" },
     { text: "ラ・マンチャランドの主", locations: [], appear6to10: false, appear11to15: true, isActive: true, imagePath: "images/extreme/master_of_lamancha.png" },
