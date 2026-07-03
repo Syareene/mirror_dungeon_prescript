@@ -276,3 +276,107 @@ footer {
     align-items: center;
     text-align: center;
 }
+
+/* --- パック管理者用フォーム --- */
+#adminFormContainer {
+    background: rgba(20, 5, 5, 0.9);
+    border: 1px solid #c63939;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(198, 57, 57, 0.4);
+}
+
+#adminFormContainer h3 {
+    color: #ffcc00;
+    text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#adminAddPackForm .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#adminAddPackForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+#adminAddPackForm input[type="text"] {
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #7d2626;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+#adminAddPackForm input[type="text"]:focus {
+    outline: none;
+    border-color: #ff3b30;
+    box-shadow: 0 0 5px rgba(255, 59, 48, 0.5);
+}
+
+#adminAddPackForm .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#adminAddPackForm .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+    color: #e0e0e0;
+}
+
+#adminAddPackForm input[type="file"] {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #4e342e;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitPackBtn {
+    width: 100%;
+    height: 44px;
+    background-color: #c63939;
+    border: 1px solid #7d2626;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+#submitPackBtn:hover {
+    background-color: #e53935;
+    box-shadow: 0 0 10px rgba(229, 57, 53, 0.6);
+}
+
+/* トグルボタン用の強調スタイル */
+#toggleAdminBtn {
+    background-color: #5d4037;
+    border: 1px solid #8d6e63;
+}
+#toggleAdminBtn:hover {
+    background-color: #6d4c41;
+}

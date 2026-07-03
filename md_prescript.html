@@ -29,6 +29,7 @@
         <button id="copyBtn">結果をコピー</button>
         <button id="shareBtn">Xでこのサイトをシェア</button>
         <button id="toggleListBtn">パック管理一覧</button>
+        <button id="toggleAdminBtn">パック追加 (管理者)</button>
     </div>
 
     <div id="packListContainer" style="display: none;">
@@ -56,6 +57,38 @@
             <h2>11-15</h2>
             <div class="slots"></div>
         </div>
+    </div>
+
+    <div id="adminFormContainer" style="display: none;">
+        <h3>新規パック追加 (管理者用)</h3>
+        <form id="adminAddPackForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="adminPackText">パック名:</label>
+                <input type="text" id="adminPackText" name="text" required placeholder="例: 狂気の鏡">
+            </div>
+            <div class="form-group">
+                <label>出現階層 (1〜5):</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="locations" value="1"> 1層</label>
+                    <label><input type="checkbox" name="locations" value="2"> 2層</label>
+                    <label><input type="checkbox" name="locations" value="3"> 3層</label>
+                    <label><input type="checkbox" name="locations" value="4"> 4層</label>
+                    <label><input type="checkbox" name="locations" value="5"> 5層</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>その他出現条件:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="adminAppear6to10" name="appear6to10"> 6-10層に出現する</label>
+                    <label><input type="checkbox" id="adminAppear11to15" name="appear11to15"> 11-15層に出現する</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="adminPackImage">パック画像:</label>
+                <input type="file" id="adminPackImage" name="image" accept="image/*">
+            </div>
+            <button type="submit" id="submitPackBtn">パックを登録する</button>
+        </form>
     </div>
 
     <footer>
