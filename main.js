@@ -390,3 +390,40 @@ function playScrambleAnimation(targetElement, finalString) {
         frame += 1 / 3; // 1フレームあたりの文字確定スピード（数値を上げると早くなる）
     }, 30); // 30ミリ秒ごとに更新
 }
+
+// --- タブ切り替え制御 & 全体初期化 ---
+
+function initTabSystem() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetTabId = btn.getAttribute('data-tab');
+
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            btn.classList.add('active');
+            const targetContent = document.getElementById(targetTabId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
+
+// ページ読み込み完了時の初期化
+document.addEventListener('DOMContentLoaded', async () => {
+    initTabSystem();
+
+    // 実績マネージャー初期化
+    if (window.achievementManager) {
+        await window.achievementManager.init();
+    }
+
+    // ビンゴマネージャー初期化
+    if (window.bingoManager) {
+        await window.bingoManager.init();
+    }
+});

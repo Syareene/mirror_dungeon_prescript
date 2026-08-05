@@ -4,67 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <title>RandomPackGenerator(LCB)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css"> <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
-    <h1>名と蜘蛛の鏡 ランダムパック抽出</h1>
-    階層を入力すると、その階層にあったパックがランダムで抽選されます。<br>
-    これで君も名誉人差し指！<br>
-    <br>
+    <h1>名と蜘蛛の鏡 ランダムパック抽出＆指針ビンゴ</h1>
 
-    <div>
-        <label>数値入力 (1〜15):
-            <input type="text" id="inputNumbers" placeholder="例: 1, 3-5 7　9-11" style="width: 300px;">
-        </label>
-        <button id="generateBtn">抽出する</button>
-    </div>
+    <!-- タブナビゲーション -->
+    <nav class="tab-nav">
+        <button class="tab-btn active" data-tab="tab-pack">パックランダム抽選</button>
+        <button class="tab-btn" data-tab="tab-bingo">ビンゴチャレンジ</button>
+        <button class="tab-btn" data-tab="tab-achievements">実績一覧</button>
+    </nav>
 
-    <div class="action-buttons" style="margin-top: 10px;">
-        <button id="copyBtn">結果をコピー</button>
-        <button id="shareBtn">Xでこのサイトをシェア</button>
-        <button id="toggleListBtn">パック管理一覧</button>
-    </div>
+    <!-- タブ1: パックランダム抽選 (既存の機能) -->
+    <section id="tab-pack" class="tab-content active">
+        <p class="tab-desc">階層を入力すると、その階層にあったパックがランダムで抽選されます。<br>これで君も名誉人差し指！</p>
 
-    <div id="packListContainer" style="display: none;">
-        <h3>パック有効/無効設定</h3>
-        <p>クリックして抽選対象を切り替えます（暗い画像は出現しません）</p>
-        <div id="packListGrid"></div>
-    </div>
-
-    <div id="animationContainer">
-        <p id="animatedText"></p>
-    </div>
-
-    <div id="outputArea">
-        <div class="group-container" id="group1to5">
-            <h2>1-5</h2>
-            <div class="slots"></div>
+        <div>
+            <label>数値入力 (1〜15):
+                <input type="text" id="inputNumbers" placeholder="例: 1, 3-5 79-11" style="width: 300px;">
+            </label>
+            <button id="generateBtn">抽出する</button>
         </div>
-    
-        <div class="group-container" id="group6to10">
-            <h2>6-10</h2>
-            <div class="slots"></div>
+
+        <div class="action-buttons" style="margin-top: 10px;">
+            <button id="copyBtn">結果をコピー</button>
+            <button id="shareBtn">Xでこのサイトをシェア</button>
+            <button id="toggleListBtn">パック管理一覧</button>
         </div>
-    
-        <div class="group-container" id="group11to15">
-            <h2>11-15</h2>
-            <div class="slots"></div>
+
+        <div id="packListContainer" style="display: none;">
+            <h3>パック有効/無効設定</h3>
+            <p>クリックして抽選対象を切り替えます（暗い画像は出現しません）</p>
+            <div id="packListGrid"></div>
         </div>
-    </div>
+
+        <div id="animationContainer">
+            <p id="animatedText"></p>
+        </div>
+
+        <div id="outputArea">
+            <div class="group-container" id="group1to5">
+                <h2>1-5</h2>
+                <div class="slots"></div>
+            </div>
+
+            <div class="group-container" id="group6to10">
+                <h2>6-10</h2>
+                <div class="slots"></div>
+            </div>
+
+            <div class="group-container" id="group11to15">
+                <h2>11-15</h2>
+                <div class="slots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- タブ2: ビンゴシステム -->
+    <section id="tab-bingo" class="tab-content">
+        <p class="tab-desc">鏡ダンジョン挑戦用のビンゴカードです。攻略中に達成したマスをクリックしてチェックを入れ、最後に「挑戦完了」を押して実績に保存します。</p>
+
+        <div class="bingo-header-actions">
+            <button id="newBingoBtn" class="btn-secondary">新しいカードを生成</button>
+            <button id="completeChallengeBtn" class="btn-primary">🏆 挑戦完了（実績へ保存）</button>
+            <div class="line-status">成立ライン数: <span id="bingoLineCount">0</span></div>
+        </div>
+
+        <div class="bingo-layout">
+            <!-- 左側: 5x5 ビンゴ盤面 -->
+            <div class="bingo-left-column">
+                <div id="bingoGrid" class="bingo-grid"></div>
+            </div>
+
+            <!-- 右側: 選択マス詳細パネル (PC表示用) -->
+            <div class="bingo-right-column">
+                <h3>ミッション詳細</h3>
+                <div id="bingoDetailPanel" class="detail-panel">
+                    <div class="detail-empty">マスを選択すると詳細が表示されます。<br><small>※ダブルクリックで達成チェックをトグルできます。</small></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- スマホ用スライドイン詳細ドロワー -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <div class="drawer-header">
+                <h3>ミッション詳細</h3>
+                <button id="closeDrawerBtn" class="drawer-close-btn">&times;</button>
+            </div>
+            <div id="drawerBody" class="drawer-body"></div>
+        </div>
+    </section>
+
+    <!-- タブ3: 実績一覧 -->
+    <section id="tab-achievements" class="tab-content">
+        <p class="tab-desc">これまでに達成した累積ミッションと隠し実績の解禁状況です。</p>
+        <div id="achievementsContainer"></div>
+    </section>
 
     <footer>
         <div class="footer-content">
             <p class="disclaimer">
                 使用している画像はゲーム内からキャプチャーした画像であり、解析したものではございません。また、関連する著作権及びその他の知的財産権はプロジェクトムーンに帰属します。
                 本サイトはプロジェクトムーンの公式コンテンツではなく、ファンメイドであり、プロジェクトムーンが保証し、又は承認するものではありません。
-                当サイトは「<a href="https://limbuscompany.jp/terms-of-service/"
-                    target="_blank" rel="noopener">LimbusCompanyサービス利用約款</a>」を遵守して制作しています。問題がある場合は下記のXアカウントないしはGithubリポジトリのIssueにご連絡ください。
+                当サイトは「<a href="https://limbuscompany.jp/terms-of-service/" target="_blank" rel="noopener">LimbusCompanyサービス利用約款</a>」を遵守して制作しています。問題がある場合は下記のXアカウントないしはGithubリポジトリのIssueにご連絡ください。
             </p>
             <p class="author">
                 Author: <a href="https://x.com/syareene_sub" target="_blank" rel="noopener">@syareene</a><br>
@@ -73,6 +124,8 @@
         </div>
     </footer>
 
+    <script src="achievements.js"></script>
+    <script src="bingo.js"></script>
     <script src="main.js"></script>
 </body>
 

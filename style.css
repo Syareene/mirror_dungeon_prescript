@@ -15,6 +15,7 @@ h1 {
         3px 0px 1.5px rgba(0, 255, 255, 0.9);
     letter-spacing: 4px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -27,6 +28,61 @@ h2 {
     letter-spacing: 2px;
 }
 
+/* --- タブナビゲーション --- */
+.tab-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0 25px 0;
+    border-bottom: 2px solid #4e342e;
+    padding-bottom: 2px;
+}
+
+.tab-btn {
+    background-color: #2b1111;
+    color: #aaa;
+    border: 1px solid #4e342e;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    padding: 10px 24px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: #3d1a1a;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background-color: #4e342e;
+    color: #ffcc00;
+    border-color: #ffcc00;
+    border-bottom: 2px solid #1a0505;
+    margin-bottom: -2px;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.tab-content {
+    display: none;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-desc {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .action-buttons {
     display: flex;
     gap: 10px;
@@ -37,7 +93,6 @@ h2 {
 /* シェアボタン */
 #shareBtn {
     background-color: #000000;
-    /* Xのイメージカラー */
     border: 1px solid #333;
 }
 
@@ -93,6 +148,405 @@ button:hover {
     background-color: #5d4037;
 }
 
+.btn-primary {
+    background-color: #b71c1c;
+    border-color: #ff5252;
+}
+.btn-primary:hover {
+    background-color: #d32f2f;
+}
+
+.btn-secondary {
+    background-color: #37474f;
+    border-color: #78909c;
+}
+.btn-secondary:hover {
+    background-color: #455a64;
+}
+
+.btn-danger {
+    background-color: #c62828;
+    border-color: #e53935;
+}
+
+/* --- ビンゴセクション スタイル --- */
+.bingo-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #4e342e;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.line-status {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.line-status span {
+    font-size: 1.4em;
+    color: #00e5ff;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+}
+
+.bingo-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.bingo-left-column {
+    flex: 2;
+    min-width: 0;
+}
+
+.bingo-right-column {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #4e342e;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.bingo-right-column h3 {
+    margin-top: 0;
+    color: #ffcc00;
+    border-bottom: 1px solid #4e342e;
+    padding-bottom: 8px;
+}
+
+/* 5x5 ビンゴ盤面 */
+.bingo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border: 1px solid #4e342e;
+    border-radius: 6px;
+}
+
+.bingo-cell {
+    background: rgba(30, 10, 10, 0.8);
+    border: 1px solid #5d4037;
+    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.bingo-cell:hover {
+    background: rgba(60, 20, 20, 0.9);
+    border-color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+.bingo-cell.selected {
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+    border-color: #00e5ff;
+}
+
+.bingo-cell.checked {
+    background: linear-gradient(135deg, rgba(20, 60, 20, 0.9), rgba(10, 40, 10, 0.9));
+    border-color: #4caf50;
+}
+.bingo-cell.checked::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(76, 175, 80, 0.15);
+    pointer-events: none;
+}
+
+.cell-level {
+    font-size: 0.7em;
+    background: #4e342e;
+    color: #ffcc00;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.cell-title {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    word-break: break-all;
+    line-height: 1.2;
+    margin: 4px 0;
+}
+
+.cell-status {
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+    height: 18px;
+}
+
+/* レベル別カラー強調 */
+.bingo-cell.level-1 .cell-level { background: #37474f; color: #fff; }
+.bingo-cell.level-2 .cell-level { background: #1b5e20; color: #a5d6a7; }
+.bingo-cell.level-3 .cell-level { background: #0d47a1; color: #90caf9; }
+.bingo-cell.level-4 .cell-level { background: #4a148c; color: #ce93d8; }
+.bingo-cell.level-5 .cell-level { background: #b71c1c; color: #ff8a80; }
+
+/* 詳細パネル */
+.detail-empty {
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 30px 10px;
+    line-height: 1.5;
+}
+
+.detail-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.detail-badge.level-1 { background: #37474f; color: #fff; }
+.detail-badge.level-2 { background: #1b5e20; color: #a5d6a7; }
+.detail-badge.level-3 { background: #0d47a1; color: #90caf9; }
+.detail-badge.level-4 { background: #4a148c; color: #ce93d8; }
+.detail-badge.level-5 { background: #b71c1c; color: #ff8a80; }
+
+.detail-title {
+    margin: 0 0 10px 0;
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+.detail-desc {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.detail-tags .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #555;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75em;
+    color: #bbb;
+    margin-right: 4px;
+}
+
+.btn-toggle {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+}
+.btn-unchecked {
+    background-color: #2e7d32;
+    border-color: #4caf50;
+}
+.btn-unchecked:hover {
+    background-color: #388e3c;
+}
+.btn-checked {
+    background-color: #c62828;
+    border-color: #ef5350;
+}
+.btn-checked:hover {
+    background-color: #d32f2f;
+}
+
+/* スマホ用ドロワー */
+.mobile-drawer {
+    display: none;
+    position: fixed;
+    bottom: -100%;
+    left: 0; right: 0;
+    background: #110303;
+    border-top: 2px solid #ffcc00;
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+    transition: bottom 0.3s ease;
+}
+
+.mobile-drawer.open {
+    bottom: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #4e342e;
+    padding-bottom: 8px;
+}
+
+.drawer-header h3 {
+    margin: 0;
+    color: #ffcc00;
+}
+
+.drawer-close-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* --- 実績画面 スタイル --- */
+.achievements-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #4e342e;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-label {
+    font-size: 0.85em;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.summary-val {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff9800, #ffcc00);
+    transition: width 0.4s ease;
+}
+
+.achievement-level-group {
+    margin-bottom: 25px;
+}
+
+.level-header {
+    margin-bottom: 10px;
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+.level-count {
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #4e342e;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.achievement-card.done {
+    background: rgba(20, 50, 20, 0.6);
+    border-color: #4caf50;
+}
+
+.achievement-card.locked {
+    opacity: 0.5;
+}
+
+.card-status-icon {
+    font-size: 1.5em;
+    width: 30px;
+    text-align: center;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.95em;
+}
+
+.card-desc {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-top: 3px;
+}
+
+/* 隠し実績カード */
+.secret-card.secret-locked {
+    background: rgba(30, 0, 0, 0.4);
+    border-color: #880e4f;
+}
+
+.secret-card.unlocked {
+    background: linear-gradient(135deg, rgba(60, 40, 0, 0.8), rgba(30, 20, 0, 0.8));
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.secret-card.unlocked .card-title {
+    color: #ffd700;
+}
+
+/* 警告ボックス */
+.alert-box {
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.alert-box.warning {
+    background: rgba(183, 28, 28, 0.2);
+    border: 1px solid #e53935;
+    color: #ffcdd2;
+}
+
 /* --- パック管理パネルのスタイル --- */
 #packListContainer {
     background: rgba(0, 0, 0, 0.8);
@@ -104,11 +558,9 @@ button:hover {
 
 #packListGrid {
     display: grid;
-    /* 管理画面は少し小さめに、多数並べる */
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 10px;
     max-height: 400px;
-    /* 長くなりすぎないよう固定高にしてスクロールさせる */
     overflow-y: auto;
     padding: 10px;
 }
@@ -142,17 +594,14 @@ button:hover {
     overflow: hidden;
 }
 
-/* 無効化された時の見た目  */
 .pack-item-manage.disabled {
     filter: grayscale(100%) brightness(0.4);
-    /* 白黒にして暗くする */
     opacity: 0.5;
 }
 
 /* --- アニメーションエリア --- */
 #animationContainer {
     height: 45px;
-    /* 高さを固定 */
     margin: 5px 0;
     display: flex;
     justify-content: center;
@@ -179,9 +628,7 @@ footer {
     margin-top: 50px;
     padding: 20px 0;
     border-top: 1px solid rgba(255, 0, 0, 0.3);
-    /* 上部にうっすら赤い境界線 */
     color: rgba(255, 255, 255, 0.6);
-    /* 文字は少し透過させて控えめに */
     font-size: 0.8em;
     text-align: center;
     line-height: 1.6;
@@ -189,7 +636,6 @@ footer {
 
 .footer-content a {
     color: #ffcc00;
-    /* リンクはh2と同じオレンジ系にして視認性を確保 */
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s;
@@ -197,7 +643,6 @@ footer {
 
 .footer-content a:hover {
     border-bottom: 1px solid #ffcc00;
-    /* ホバー時に下線を表示 */
 }
 
 .disclaimer {
@@ -209,15 +654,9 @@ footer {
     font-weight: bold;
 }
 
-.copyright {
-    font-size: 0.7em;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-/* --- 出力エリア・スロット設定（統合版） --- */
+/* --- 出力エリア・スロット設定 --- */
 #outputArea {
     max-width: 900px;
-    /* 全体の幅を少し広げて、各スロットに余裕を持たせる */
     margin: 0 auto;
 }
 
@@ -227,7 +666,6 @@ footer {
 
 .slots {
     display: grid;
-    /* 5列固定。min-width: 0 を指定して中身による幅の拡張を防ぐ */
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
 }
@@ -240,39 +678,62 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* 赤と青を消し、白の細い線のみに設定 */
     border: 1px solid rgba(255, 255, 255, 0.8);
     box-shadow: none;
-    /* 影を削除 */
     margin: 0;
-    /* 隙間はgridのgapに任せる */
 }
 
-/* スロット内の画像 */
 .slot img {
     width: 130px;
     height: auto;
     margin-top: 5px;
     max-width: 100%;
-    /* スロットからはみ出さないように制限 */
 }
 
-/* スロット内のテキスト */
 .slot p {
     height: 45px;
     margin: 0 0 5px 0;
     font-size: 0.85em;
     font-weight: bold;
-
-    /* 長い文字が幅を広げないように、強制的に改行させる設定 */
     width: 100%;
     word-break: break-all;
     overflow-wrap: anywhere;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+}
+
+/* レスポンシブ (スマホ向け: < 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .bingo-layout {
+        flex-direction: column;
+    }
+
+    .bingo-right-column {
+        display: none; /* スマホでは右カラムを隠し、ドロワーに任せる */
+    }
+
+    .mobile-drawer {
+        display: block; /* ドロワーを有効化 */
+    }
+
+    .bingo-grid {
+        gap: 4px;
+        padding: 5px;
+    }
+
+    .cell-title {
+        font-size: 0.7em;
+    }
 }

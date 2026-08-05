@@ -1,0 +1,242 @@
+[
+  {
+    "id": "m_001",
+    "title": "斬撃一閃",
+    "description": "斬撃属性のスキルを持つ人格のみでクリアする",
+    "level": 3,
+    "tags": ["affinity_slash"],
+    "conflicts": ["affinity_pierce", "affinity_blunt"]
+  },
+  {
+    "id": "m_002",
+    "title": "貫通突撃",
+    "description": "貫通属性のスキルを持つ人格のみでクリアする",
+    "level": 3,
+    "tags": ["affinity_pierce"],
+    "conflicts": ["affinity_slash", "affinity_blunt"]
+  },
+  {
+    "id": "m_003",
+    "title": "打撃粉砕",
+    "description": "打撃属性のスキルを持つ人格のみでクリアする",
+    "level": 3,
+    "tags": ["affinity_blunt"],
+    "conflicts": ["affinity_slash", "affinity_pierce"]
+  },
+  {
+    "id": "m_004",
+    "title": "火傷の宴",
+    "description": "火傷効果を付与できる人格・E.G.Oを中心に編成する",
+    "level": 2,
+    "tags": ["keyword_burn"],
+    "conflicts": ["keyword_sinking"]
+  },
+  {
+    "id": "m_005",
+    "title": "沈潜の静寂",
+    "description": "沈潜効果を付与できる人格・E.G.Oを中心に編成する",
+    "level": 2,
+    "tags": ["keyword_sinking"],
+    "conflicts": ["keyword_burn"]
+  },
+  {
+    "id": "m_006",
+    "title": "出血の惨劇",
+    "description": "出血効果を付与できる人格を中心にしてクリアする",
+    "level": 2,
+    "tags": ["keyword_bleed"],
+    "conflicts": []
+  },
+  {
+    "id": "m_007",
+    "title": "破裂の衝撃",
+    "description": "破裂効果を付与できる人格を中心にしてクリアする",
+    "level": 2,
+    "tags": ["keyword_rupture"],
+    "conflicts": []
+  },
+  {
+    "id": "m_008",
+    "title": "振動共鳴",
+    "description": "振動効果を付与できる人格を中心にしてクリアする",
+    "level": 2,
+    "tags": ["keyword_tremor"],
+    "conflicts": []
+  },
+  {
+    "id": "m_009",
+    "title": "呼吸集中",
+    "description": "呼吸効果を活用する人格を中心にしてクリアする",
+    "level": 2,
+    "tags": ["keyword_poise"],
+    "conflicts": []
+  },
+  {
+    "id": "m_010",
+    "title": "充電完了",
+    "description": "充電効果を活用する人格を中心にしてクリアする",
+    "level": 2,
+    "tags": ["keyword_charge"],
+    "conflicts": []
+  },
+  {
+    "id": "m_011",
+    "title": "初期人格のみで踏破",
+    "description": "LCB囚人人格（★1人格）のみでクリアする",
+    "level": 5,
+    "tags": ["identity_lcb", "restriction_hard"],
+    "conflicts": ["identity_star3"]
+  },
+  {
+    "id": "m_012",
+    "title": "★3人格重視",
+    "description": "編成人格をすべて★3人格にしてクリアする",
+    "level": 1,
+    "tags": ["identity_star3"],
+    "conflicts": ["identity_lcb"]
+  },
+  {
+    "id": "m_013",
+    "title": "E.G.O資源節約",
+    "description": "ダンジョン全体でE.G.Oスキルを合計3回以下しか使用しない",
+    "level": 4,
+    "tags": ["ego_save"],
+    "conflicts": ["ego_spam"]
+  },
+  {
+    "id": "m_014",
+    "title": "E.G.O連発",
+    "description": "各階層のボス戦で合計5回以上E.G.Oを使用する",
+    "level": 2,
+    "tags": ["ego_spam"],
+    "conflicts": ["ego_save"]
+  },
+  {
+    "id": "m_015",
+    "title": "コスト温存の達人",
+    "description": "ショップでコストを累計300以上残してクリアする",
+    "level": 3,
+    "tags": ["cost_save"],
+    "conflicts": ["cost_spend"]
+  },
+  {
+    "id": "m_016",
+    "title": "コスト使い尽くし",
+    "description": "ショップ利用後にコストが50未満になるよう買い物をする",
+    "level": 2,
+    "tags": ["cost_spend"],
+    "conflicts": ["cost_save"]
+  },
+  {
+    "id": "m_017",
+    "title": "特定所属：N社",
+    "description": "N社所属人格を3名以上編成してクリアする",
+    "level": 3,
+    "tags": ["faction_ncorp"],
+    "conflicts": ["faction_wcorp"]
+  },
+  {
+    "id": "m_018",
+    "title": "特定所属：W社",
+    "description": "W社所属人格を3名以上編成してクリアする",
+    "level": 3,
+    "tags": ["faction_wcorp"],
+    "conflicts": ["faction_ncorp"]
+  },
+  {
+    "id": "m_019",
+    "title": "少人数精鋭",
+    "description": "出撃人格数を3名以下に絞ってクリアする",
+    "level": 5,
+    "tags": ["squad_small"],
+    "conflicts": ["squad_full"]
+  },
+  {
+    "id": "m_020",
+    "title": "フルメンバー出撃",
+    "description": "各戦闘で常に最大人数の人格を出撃させてクリアする",
+    "level": 1,
+    "tags": ["squad_full"],
+    "conflicts": ["squad_small"]
+  },
+  {
+    "id": "m_021",
+    "title": "回復E.G.O封印",
+    "description": "HPや精神力を回復するE.G.Oを一切使用しない",
+    "level": 3,
+    "tags": ["heal_seal"],
+    "conflicts": []
+  },
+  {
+    "id": "m_022",
+    "title": "ギフト大量購入",
+    "description": "ショップでE.G.Oギフトを累計5個以上購入する",
+    "level": 2,
+    "tags": ["gift_buy"],
+    "conflicts": []
+  },
+  {
+    "id": "m_023",
+    "title": "ギフト合成挑戦",
+    "description": "休憩所でE.G.Oギフトを2回以上合成する",
+    "level": 2,
+    "tags": ["gift_combine"],
+    "conflicts": []
+  },
+  {
+    "id": "m_024",
+    "title": "ノーデス完走",
+    "description": "1名の人格も脱落（死亡）させずにクリアする",
+    "level": 4,
+    "tags": ["no_death"],
+    "conflicts": []
+  },
+  {
+    "id": "m_025",
+    "title": "危険ゾーン回避",
+    "description": "危険マス（高難易度戦闘マス）を可能な限り避けて進む",
+    "level": 1,
+    "tags": ["route_safe"],
+    "conflicts": ["route_hard"]
+  },
+  {
+    "id": "m_026",
+    "title": "修羅の道",
+    "description": "危険マス（高難易度戦闘マス）を積極的に選んで3回以上踏破する",
+    "level": 4,
+    "tags": ["route_hard"],
+    "conflicts": ["route_safe"]
+  },
+  {
+    "id": "m_027",
+    "title": "同属性スキル統一",
+    "description": "特定の罪悪属性（例：憤怒）のスキルをメインに戦闘する",
+    "level": 3,
+    "tags": ["sin_affinity"],
+    "conflicts": []
+  },
+  {
+    "id": "m_028",
+    "title": "クイック勝利",
+    "description": "各層のボス戦を6ターン以内で勝利する",
+    "level": 4,
+    "tags": ["speed_run"],
+    "conflicts": []
+  },
+  {
+    "id": "m_029",
+    "title": "無傷の序盤",
+    "description": "1〜2階層で人格のHPが50%以下にならないよう立ち回る",
+    "level": 2,
+    "tags": ["safe_early"],
+    "conflicts": []
+  },
+  {
+    "id": "m_030",
+    "title": "名誉人差し指の指針",
+    "description": "ランダム生成された指示（特定パック・条件）を愚直に全遂行する",
+    "level": 5,
+    "tags": ["prescript_master"],
+    "conflicts": []
+  }
+]
