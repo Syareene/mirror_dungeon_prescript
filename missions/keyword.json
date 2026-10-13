@@ -1,0 +1,416 @@
+[
+  {
+    "id": "md_kw_001",
+    "title": "じりじりと焼ける傷",
+    "description": "敵1体へ付与された火傷威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_burn"
+    ],
+    "conflicts": [
+      "apply_burn"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB リアンのデバフ"
+  },
+  {
+    "id": "md_kw_002",
+    "title": "アイ・アム・ファ～イヤ～",
+    "description": "敵1体へ付与された火傷威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_burn"
+    ],
+    "conflicts": [
+      "apply_burn"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR steam実績(Mili「Iron Rotus」)"
+  },
+  {
+    "id": "md_kw_003",
+    "title": "ちょっとチクってしますよ～",
+    "description": "敵1体へ付与された出血威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_bleed"
+    ],
+    "conflicts": [
+      "apply_bleed"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "md_kw_004",
+    "title": "大量出血",
+    "description": "敵1体へ付与された出血威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_bleed"
+    ],
+    "conflicts": [
+      "apply_bleed"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB 振動の種類の1つ"
+  },
+  {
+    "id": "md_kw_005",
+    "title": "ぐぇん、ぐぇん",
+    "description": "敵1体へ付与された振動威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_tremor"
+    ],
+    "conflicts": [
+      "apply_tremor"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB 泣きヒキガエル"
+  },
+  {
+    "id": "md_kw_006",
+    "title": "反響化",
+    "description": "敵1体へ付与された振動威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_tremor"
+    ],
+    "conflicts": [
+      "apply_tremor"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "SlayTheSpire カード"
+  },
+  {
+    "id": "md_kw_007",
+    "title": "MAO!(卯!)",
+    "description": "敵1体へ付与された破裂威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_rupture"
+    ],
+    "conflicts": [
+      "apply_rupture"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "WAO!を黒獣-卯-でもじったもの"
+  },
+  {
+    "id": "md_kw_008",
+    "title": "「お札」参り",
+    "description": "敵1体へ付与された破裂威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_rupture"
+    ],
+    "conflicts": [
+      "apply_rupture"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ロボトミーE.G.O::紅籍シンクレアが扱うデバフ「お札」"
+  },
+  {
+    "id": "md_kw_009",
+    "title": "萎え落ち",
+    "description": "敵1体へ付与された沈潜威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_sinking"
+    ],
+    "conflicts": [
+      "apply_sinking"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ゲーム用語。例「あいつ萎え落ちしたわ」"
+  },
+  {
+    "id": "md_kw_010",
+    "title": "過激な判断",
+    "description": "敵1体へ付与された沈潜威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_sinking"
+    ],
+    "conflicts": [
+      "apply_sinking"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "奥歯ボートセンターフィクサーイシュメール S3"
+  },
+  {
+    "id": "md_kw_011",
+    "title": "過呼吸",
+    "description": "味方1名へ付与した呼吸威力が99を達成",
+    "level": 1,
+    "tags": [
+      "apply_poise"
+    ],
+    "conflicts": [
+      "apply_poise"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "南部シ協会5課ドンキホーテ S3"
+  },
+  {
+    "id": "md_kw_012",
+    "title": "ノンブレス・オブリージュ",
+    "description": "味方1名へ付与した呼吸威力・回数が99を達成",
+    "level": 4,
+    "tags": [
+      "apply_poise"
+    ],
+    "conflicts": [
+      "apply_poise"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ピノキオPの曲。そちらもフランス語の「ノブレス・オブリージュ」のもじり"
+  },
+  {
+    "id": "md_kw_013",
+    "title": "過充電",
+    "description": "味方1名へ付与した充電威力が10を達成(特殊充電を含む、威力固定の特殊充電を除く)",
+    "level": 1,
+    "tags": [
+      "apply_charge"
+    ],
+    "conflicts": [
+      "apply_charge"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR バトルページ"
+  },
+  {
+    "id": "md_kw_014",
+    "title": "オーバクロック",
+    "description": "味方1名へ付与した充電威力が30を達成(特殊充電を含む、威力固定の特殊充電を除く)",
+    "level": 4,
+    "tags": [
+      "apply_charge"
+    ],
+    "conflicts": [
+      "apply_charge"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "周波数を規定の値より引き上げること。主にCPUに対して使われる。自己責任で。"
+  },
+  {
+    "id": "md_kw_015",
+    "title": "人間とは脆いものだ(原典確認)",
+    "description": "敵1体へ付与された脆弱が10を達成(集中戦闘の場合は部位でチェック)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LC ビナー"
+  },
+  {
+    "id": "md_kw_016",
+    "title": "絶好調",
+    "description": "味方1名へ付与されたダメージ増加が10を達成",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_kw_017",
+    "title": "切れ味が強い",
+    "description": "味方1名へ付与された「攻撃レベル増加」が30を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "攻撃レベルが増加した値ではなく、攻撃レベル増加のバフの付与量です",
+    "source": ""
+  },
+  {
+    "id": "md_kw_018",
+    "title": "あなたの盾",
+    "description": "味方1名のいずれかのスロットの挑発値が10を達成",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ツヴァイ協会スローガン"
+  },
+  {
+    "id": "md_kw_019",
+    "title": "戦闘準備",
+    "description": "味方1名へ付与された保護が10を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR バトルページ"
+  },
+  {
+    "id": "md_kw_020",
+    "title": "数多のものが締め付けてくる…",
+    "description": "敵1体へ付与された束縛が10を達成(集中戦闘の場合は部位でチェック)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB ムルソー初期E.G.O「他人の鎖」"
+  },
+  {
+    "id": "md_kw_021",
+    "title": "最強腕前",
+    "description": "味方1名へ付与されたクイックが10を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR とあるパッシブとパッシブの組み合わせの俗称"
+  },
+  {
+    "id": "md_kw_022",
+    "title": "One for All",
+    "description": "味方1名にプラス効果(黄色文字)を5種付与する",
+    "level": 1,
+    "tags": [
+      "apply_buff"
+    ],
+    "conflicts": [
+      "apply_buff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_kw_023",
+    "title": "All for One",
+    "description": "味方1名にプラス効果(黄色文字)を10種付与する",
+    "level": 3,
+    "tags": [
+      "apply_buff"
+    ],
+    "conflicts": [
+      "apply_buff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_kw_024",
+    "title": "虹色のパレット",
+    "description": "1つの対象にマイナス効果(赤色文字)を5種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_kw_025",
+    "title": "秀作",
+    "description": "1つの対象にマイナス効果(赤色文字)を10種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 2,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB E.G.Oギフト"
+  },
+  {
+    "id": "md_kw_026",
+    "title": "大きなアトリエ",
+    "description": "1つの対象にマイナス効果(赤色文字)を15種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  }
+]

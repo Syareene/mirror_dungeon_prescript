@@ -1,0 +1,312 @@
+[
+  {
+    "id": "md_ex_001",
+    "title": "制約 -レベル強化-",
+    "description": "「レベル強化」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_002",
+    "title": "制約 -衰弱-",
+    "description": "「衰弱」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_003",
+    "title": "制約 -炎の烙印-",
+    "description": "「炎の烙印」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_004",
+    "title": "制約 -インフレーション-",
+    "description": "「インフレーション」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_005",
+    "title": "制約 -自我干渉-",
+    "description": "「自我干渉」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_006",
+    "title": "制約 -戦力の再分配-",
+    "description": "「戦力の再分配」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_007",
+    "title": "制約 -精神錯乱-",
+    "description": "「精神錯乱」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_008",
+    "title": "制約 -神経促進-",
+    "description": "「神経促進」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_009",
+    "title": "制約 -精神力枯渇-",
+    "description": "「精神力枯渇」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_010",
+    "title": "制約 -精神的高揚-",
+    "description": "「精神的高揚」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_011",
+    "title": "制約 -振動遮断-",
+    "description": "「振動遮断」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_012",
+    "title": "制約 -バリア生成-",
+    "description": "「バリア生成」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_013",
+    "title": "制約 -生命力増幅-",
+    "description": "「生命力増幅」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_014",
+    "title": "制約 -破壊力-",
+    "description": "「破壊力」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_015",
+    "title": "制約 -亀裂増幅-",
+    "description": "「亀裂増幅」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_016",
+    "title": "制約 -状態異常付与-",
+    "description": "「状態異常付与」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_017",
+    "title": "制約ポイントⅠ",
+    "description": "制約ポイントが10点以上で鏡ダンジョン階層をクリア",
+    "level": 1,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_018",
+    "title": "制約ポイントⅡ",
+    "description": "制約ポイントが20点以上で鏡ダンジョン階層をクリア",
+    "level": 2,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_019",
+    "title": "制約ポイントⅢ",
+    "description": "制約ポイントが30点以上で鏡ダンジョン階層をクリア",
+    "level": 3,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_020",
+    "title": "制約ポイントⅣ",
+    "description": "制約ポイントが40点以上で鏡ダンジョン階層をクリア",
+    "level": 3,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_021",
+    "title": "制約ポイントⅤ",
+    "description": "制約ポイントが50点以上で鏡ダンジョン階層をクリア",
+    "level": 4,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_ex_022",
+    "title": "制約ポイントⅥ",
+    "description": "制約ポイントが60点以上で鏡ダンジョン階層をクリア",
+    "level": 5,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム"
+    ],
+    "note": "",
+    "source": ""
+  }
+]

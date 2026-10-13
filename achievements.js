@@ -2,8 +2,23 @@
  * 実績管理 & 隠し実績判定エンジン (achievements.js)
  */
 
-const ACHIEVEMENTS_STORAGE_KEY = 'lcb_achievements_v1';
+const ACHIEVEMENTS_STORAGE_KEY = 'lcb_achievements_v2';
 const CHECKSUM_SALT = 'lcb_prescript_salt_key_2026';
+
+const MISSION_FILES = [
+    'missions/theme_pack.json',
+    'missions/identity.json',
+    'missions/shop_gift.json',
+    'missions/battle.json',
+    'missions/keyword.json',
+    'missions/extreme.json'
+];
+
+window.fetchAllMissions = async function() {
+    const responses = await Promise.all(MISSION_FILES.map(f => fetch(f)));
+    const jsons = await Promise.all(responses.map(r => r.json()));
+    return jsons.flat();
+};
 
 /**
  * 隠し実績の条件判定エンジン (Registry Pattern)
@@ -65,15 +80,19 @@ class AchievementManager {
         };
         this.isCorrupted = false;
         this.isLoaded = false;
+
+        // UI表示・ソート状態
+        this.currentSort = 'level'; // 'level' | 'displayTag' | 'all'
+        this.currentFilter = 'all'; // 'all' | 'unlocked' | 'locked'
     }
 
     async init() {
         try {
-            const [mRes, sRes] = await Promise.all([
-                fetch('missions.json'),
+            const [missions, sRes] = await Promise.all([
+                window.fetchAllMissions(),
                 fetch('secrets.json')
             ]);
-            this.allMissions = await mRes.json();
+            this.allMissions = missions;
             this.allSecrets = await sRes.json();
             this.isLoaded = true;
         } catch (e) {
@@ -138,20 +157,17 @@ class AchievementManager {
             await this.init();
         }
 
-        // ミッション追加 (重複排除)
         completedMissionIds.forEach(id => {
             if (!this.data.achievedMissionIds.includes(id)) {
                 this.data.achievedMissionIds.push(id);
             }
         });
 
-        // 累計ライン数 & クリア数更新
         if (lineCount > 0) {
             this.data.totalLines = (this.data.totalLines || 0) + lineCount;
         }
         this.data.totalClears = (this.data.totalClears || 0) + 1;
 
-        // 隠し実績の評価
         const newlyUnlockedSecrets = [];
         this.allSecrets.forEach(secret => {
             if (!this.data.unlockedSecretIds.includes(secret.id)) {
@@ -181,9 +197,75 @@ class AchievementManager {
         this.render();
     }
 
+    /**
+     * フィルター適用後のミッション配列を返す
+     */
+    getFilteredMissions() {
+        return this.allMissions.filter(m => {
+            const isDone = (this.data.achievedMissionIds || []).includes(m.id);
+            if (this.currentFilter === 'unlocked') return isDone;
+            if (this.currentFilter === 'locked') return !isDone;
+            return true;
+        });
+    }
+
+    /**
+     * 単一のミッションカード HTML を生成
+     */
+    renderMissionCardHtml(m) {
+        const isDone = (this.data.achievedMissionIds || []).includes(m.id);
+        const displayTags = m.displayTags && m.displayTags.length > 0 ? m.displayTags : [];
+
+        const tagsHtml = displayTags.length > 0 ? `
+            <div class="card-tags">
+                ${displayTags.map(t => `<span class="tag">${t}</span>`).join('')}
+            </div>
+        ` : '';
+
+        const noteHtml = m.note ? `
+            <div class="note-toggle-btn" onclick="this.nextElementSibling.classList.toggle('show')">💡 補足</div>
+            <div class="card-note-detail">${m.note}</div>
+        ` : '';
+
+        const sourceHtml = m.source ? `
+            <div class="card-source">${m.source}</div>
+        ` : '';
+
+        return `
+            <div class="achievement-card ${isDone ? 'done' : 'locked'}">
+                <div class="card-top-row">
+                    <div class="card-status-icon">${isDone ? '★' : '🔒'}</div>
+                    <div class="card-info">
+                        <div class="card-title">Lv.${m.level} - ${m.title}</div>
+                        <div class="card-desc">${m.description}</div>
+                        ${noteHtml}
+                        ${tagsHtml}
+                    </div>
+                </div>
+                ${sourceHtml}
+            </div>
+        `;
+    }
+
+    /**
+     * 実績一覧タブの描画
+     */
     render() {
         const container = document.getElementById('achievementsContainer');
         if (!container) return;
+
+        if (!this.isLoaded) {
+            const isFile = window.location.protocol === 'file:';
+            container.innerHTML = `
+                <div class="alert-box warning" style="padding: 20px; background: rgba(50, 20, 20, 0.8); border: 2px solid #e74c3c; border-radius: 8px; margin: 20px 0; color: #fff;">
+                    <h3 style="color: #ff6b6b; margin-top: 0;">⚠️ ミッションデータを読み込めませんでした</h3>
+                    <p style="line-height: 1.6;">${isFile
+                        ? '現在ローカルファイル（<code>file:///</code>）から直接開かれています。<br>ブラウザのセキュリティ仕様（CORS制限）により外部JSONの取得がブロックされています。<br><br>💡 <strong>ローカルWebサーバー（VS Codeの「Live Server」や <code>npx serve</code> など）経由</strong> または <strong>GitHub Pages</strong> 上でご確認ください。'
+                        : 'ミッションJSONファイルの取得に失敗しました。コンソールログをご確認ください。'}</p>
+                </div>
+            `;
+            return;
+        }
 
         if (this.isCorrupted) {
             container.innerHTML = `
@@ -224,51 +306,102 @@ class AchievementManager {
                 </div>
             </div>
 
+            <!-- コントロールバー (ソート & フィルター) -->
+            <div class="achievement-controls">
+                <div class="control-group">
+                    <label for="achieveSortSelect">グループ分け:</label>
+                    <select id="achieveSortSelect">
+                        <option value="level" ${this.currentSort === 'level' ? 'selected' : ''}>難易度 (Level) 別</option>
+                        <option value="displayTag" ${this.currentSort === 'displayTag' ? 'selected' : ''}>表示カテゴリ (タグ) 別</option>
+                        <option value="all" ${this.currentSort === 'all' ? 'selected' : ''}>全件リスト</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="achieveFilterSelect">達成状態:</label>
+                    <select id="achieveFilterSelect">
+                        <option value="all" ${this.currentFilter === 'all' ? 'selected' : ''}>すべて表示</option>
+                        <option value="unlocked" ${this.currentFilter === 'unlocked' ? 'selected' : ''}>達成済みのみ</option>
+                        <option value="locked" ${this.currentFilter === 'locked' ? 'selected' : ''}>未達成のみ</option>
+                    </select>
+                </div>
+            </div>
+
             <h2>【一般ミッション実績】</h2>
         `;
 
-        for (let level = 1; level <= 5; level++) {
-            const levelMissions = this.allMissions.filter(m => m.level === level);
-            const levelAchieved = levelMissions.filter(m => (this.data.achievedMissionIds || []).includes(m.id)).length;
+        const filteredMissions = this.getFilteredMissions();
 
-            html += `
-                <div class="achievement-level-group">
-                    <h3 class="level-header">Level ${level} <span class="level-count">(${levelAchieved}/${levelMissions.length})</span></h3>
-                    <div class="achievement-grid">
-            `;
+        if (this.currentSort === 'level') {
+            // Level別表示
+            for (let level = 1; level <= 5; level++) {
+                const groupMissions = filteredMissions.filter(m => m.level === level);
+                if (groupMissions.length === 0) continue;
+                const totalInLevel = this.allMissions.filter(m => m.level === level).length;
+                const levelAchieved = this.allMissions.filter(m => m.level === level && (this.data.achievedMissionIds || []).includes(m.id)).length;
 
-            levelMissions.forEach(m => {
-                const isDone = (this.data.achievedMissionIds || []).includes(m.id);
                 html += `
-                    <div class="achievement-card ${isDone ? 'done' : 'locked'}">
-                        <div class="card-status-icon">${isDone ? '★' : '🔒'}</div>
-                        <div class="card-info">
-                            <div class="card-title">${m.title}</div>
-                            <div class="card-desc">${m.description}</div>
+                    <div class="achievement-level-group">
+                        <h3 class="level-header">Level ${level} <span class="level-count">(${levelAchieved}/${totalInLevel})</span></h3>
+                        <div class="achievement-grid">
+                            ${groupMissions.map(m => this.renderMissionCardHtml(m)).join('')}
                         </div>
                     </div>
                 `;
+            }
+        } else if (this.currentSort === 'displayTag') {
+            // 表示用タグ別グループ表示
+            const tagMap = new Map();
+            filteredMissions.forEach(m => {
+                const tags = m.displayTags && m.displayTags.length > 0 ? m.displayTags : ['未分類'];
+                tags.forEach(t => {
+                    if (!tagMap.has(t)) tagMap.set(t, []);
+                    tagMap.get(t).push(m);
+                });
             });
 
+            if (tagMap.size === 0) {
+                html += `<p style="color: #aaa; text-align: center;">該当するミッションがありません。</p>`;
+            } else {
+                tagMap.forEach((gMissions, tagName) => {
+                    html += `
+                        <div class="achievement-level-group">
+                            <h3 class="level-header">🏷️ ${tagName} <span class="level-count">(${gMissions.length}件)</span></h3>
+                            <div class="achievement-grid">
+                                ${gMissions.map(m => this.renderMissionCardHtml(m)).join('')}
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        } else {
+            // フラット全件表示
             html += `
-                    </div>
+                <div class="achievement-grid">
+                    ${filteredMissions.map(m => this.renderMissionCardHtml(m)).join('')}
                 </div>
             `;
         }
 
+        // 隠し実績コーナー
         html += `
-            <h2 style="margin-top: 30px;">【隠し実績 (Secret Achievements)】</h2>
+            <h2 style="margin-top: 35px;">【隠し実績 (Secret Achievements)】</h2>
             <div class="achievement-grid secrets-grid">
         `;
 
         this.allSecrets.forEach(sec => {
             const isUnlocked = (this.data.unlockedSecretIds || []).includes(sec.id);
+            if (this.currentFilter === 'unlocked' && !isUnlocked) return;
+            if (this.currentFilter === 'locked' && isUnlocked) return;
+
             html += `
                 <div class="achievement-card secret-card ${isUnlocked ? 'unlocked' : 'secret-locked'}">
-                    <div class="card-status-icon">${isUnlocked ? '🏆' : '❓'}</div>
-                    <div class="card-info">
-                        <div class="card-title">${isUnlocked ? sec.title : '??? (隠し実績)'}</div>
-                        <div class="card-desc">${isUnlocked ? sec.description : '特定条件を達成することで解禁されます'}</div>
+                    <div class="card-top-row">
+                        <div class="card-status-icon">${isUnlocked ? '🏆' : '❓'}</div>
+                        <div class="card-info">
+                            <div class="card-title">${isUnlocked ? sec.title : '??? (隠し実績)'}</div>
+                            <div class="card-desc">${isUnlocked ? sec.description : '特定条件を達成することで解禁されます'}</div>
+                        </div>
                     </div>
                 </div>
             `;
@@ -276,6 +409,17 @@ class AchievementManager {
 
         html += `</div>`;
         container.innerHTML = html;
+
+        // イベントリスナーの再紐付け
+        document.getElementById('achieveSortSelect')?.addEventListener('change', (e) => {
+            this.currentSort = e.target.value;
+            this.render();
+        });
+
+        document.getElementById('achieveFilterSelect')?.addEventListener('change', (e) => {
+            this.currentFilter = e.target.value;
+            this.render();
+        });
     }
 }
 

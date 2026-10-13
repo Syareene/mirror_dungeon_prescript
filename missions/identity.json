@@ -1,0 +1,504 @@
+[
+  {
+    "id": "md_idt_001",
+    "title": "火旺の節",
+    "description": "火傷キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_002",
+    "title": "屍山血海",
+    "description": "出血キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_003",
+    "title": "異常震域",
+    "description": "振動キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_004",
+    "title": "破竹の勢い",
+    "description": "破裂キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_005",
+    "title": "沈潜殺到",
+    "description": "沈潜キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_006",
+    "title": "循環呼吸",
+    "description": "呼吸キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_007",
+    "title": "霹靂閃電",
+    "description": "充電キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
+  },
+  {
+    "id": "md_idt_008",
+    "title": "百発百中",
+    "description": "弾丸キーワード人格が5名以上編成された状態で階層ボスを討伐(特殊弾丸を含む)",
+    "level": 2,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_009",
+    "title": "異端審問",
+    "description": "N社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_010",
+    "title": "どんな場所へでも10秒でお届けいたします(要原文チェック)",
+    "description": "W社所属人格を5名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "W社スローガン"
+  },
+  {
+    "id": "md_idt_011",
+    "title": "生存競争",
+    "description": "R社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_012",
+    "title": "TT2プロトコル",
+    "description": "T社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_013",
+    "title": "引き継がれる意志",
+    "description": "L社所属ないしはリンバス・カンパニー所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_014",
+    "title": "協業関係",
+    "description": "L社,R社,T社,W社それぞれの人格を最低1名編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_015",
+    "title": "黒獣たちよ、応えろ",
+    "description": "H社所属人格を5名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "君主ホンルS3"
+  },
+  {
+    "id": "md_idt_016",
+    "title": "ハナは皆のために、皆はハナのために",
+    "description": "協会所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "ハナ協会スローガン"
+  },
+  {
+    "id": "md_idt_017",
+    "title": "E.G.O.I.S.T",
+    "description": "特性キーワード「E.G.O装備」を保有している人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LoR 没エンド"
+  },
+  {
+    "id": "md_idt_018",
+    "title": "鯨を追うものたち",
+    "description": "ピークォド号所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_019",
+    "title": "お頭ぁ！",
+    "description": "剣契所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB エンドゥ"
+  },
+  {
+    "id": "md_idt_020",
+    "title": "みかじめ料を徴収します",
+    "description": "黒雲会所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "ねじれ探偵での出来事(?)"
+  },
+  {
+    "id": "md_idt_021",
+    "title": "悲劇の邸宅",
+    "description": "ワザリング・ハイツ所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "嵐ヶ丘にて、ワザリング・ハイツの別称"
+  },
+  {
+    "id": "md_idt_022",
+    "title": "永遠に続くカーニバル(原文確認)",
+    "description": "ラ・マンチャランド人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 7章"
+  },
+  {
+    "id": "md_idt_023",
+    "title": "礼",
+    "description": "親指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「礼」"
+  },
+  {
+    "id": "md_idt_024",
+    "title": "信",
+    "description": "人差し指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「信」"
+  },
+  {
+    "id": "md_idt_025",
+    "title": "義",
+    "description": "中指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「義」"
+  },
+  {
+    "id": "md_idt_026",
+    "title": "智",
+    "description": "薬指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「義」"
+  },
+  {
+    "id": "md_idt_027",
+    "title": "仁",
+    "description": "小指人格を2名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「仁」"
+  },
+  {
+    "id": "md_idt_028",
+    "title": "指切り",
+    "description": "蜘蛛の巣所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LoR/LCB"
+  },
+  {
+    "id": "md_idt_029",
+    "title": "当時の厨パ",
+    "description": "鏡屈折鉄道4号線第3区間に登場する嫉妬大罪人格を全て編成し鏡ダンジョン15層をクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_idt_030",
+    "title": "疑問",
+    "description": "「ロボトミー本社」のタグがついた人格のみを編成し「緑の黎明」パックをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  }
+]

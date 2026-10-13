@@ -1,0 +1,197 @@
+[
+  {
+    "id": "md_theme_001",
+    "title": "地獄のバスツアー",
+    "description": "章テーマパックのCAUTION!がついているパックを1章から9章まで順に選択し鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_theme_002",
+    "title": "Isn't that enough?",
+    "description": "4章テーマパックである、「巣・工房・技術」、「落花」、「流す者たち」、「変わらない」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「FlyMyWings」"
+  },
+  {
+    "id": "md_theme_003",
+    "title": "My compass is curiocity.",
+    "description": "5章テーマパックである、「レイクワールド」、「這い寄る深淵」、「悪に規定される」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Compass」"
+  },
+  {
+    "id": "md_theme_004",
+    "title": "How much I wished for another.",
+    "description": "6章テーマパックである、「邸宅の副産物」、「とある世界」、「心のすれ違う」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Through Patches of Violet」"
+  },
+  {
+    "id": "md_theme_005",
+    "title": "I am my biggest fan.",
+    "description": "7章テーマパックである、「再び開かれたラ・マンチャランド」、「終わらぬ行列」、「夢の終わる」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Hero」"
+  },
+  {
+    "id": "md_theme_006",
+    "title": "I used to think it's not worth it.",
+    "description": "8章テーマパックである、「四代家門と欲望」、「眺めることしかできない」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Tian Tian」"
+  },
+  {
+    "id": "md_theme_007",
+    "title": "You know, it is not so bad.",
+    "description": "9章テーマパックである、「幻惑・彷徨・不信」、「教本」、「剣と作品」、「断ち切れない」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「SAIKAI」"
+  },
+  {
+    "id": "md_theme_008",
+    "title": "鉄道マスター",
+    "description": "鉄道系パックを全て選択し鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_theme_009",
+    "title": "試練に立ち向かえ",
+    "description": "「紫の白昼」、「琥珀の夕暮れ」、「緑の黎明」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Lobotomy Corporation"
+  },
+  {
+    "id": "md_theme_010",
+    "title": "カニ道楽",
+    "description": "「う・み・ダ」、「う・み・ダ・かに・バル」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_theme_011",
+    "title": "ねじれの展覧会(これ該当パックこれで問題ないのか?)",
+    "description": "「ヘルズチキン」、「肉斬骨断」、「時間殺人時間」、「LCB定期検診」、「美しい声」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_theme_012",
+    "title": "全員、処刑だ！",
+    "description": "「即決処刑の時間」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB リカルドのセリフ"
+  },
+  {
+    "id": "md_theme_013",
+    "title": "我が名はキホーテ！",
+    "description": "「ラ・マンチャランドの主」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB ドンキホーテのセリフ"
+  },
+  {
+    "id": "md_theme_014",
+    "title": "どうすりゃ俺っちの命だけでも助かるんや？",
+    "description": "「挿翅虎」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB レイホンのセリフ"
+  },
+  {
+    "id": "md_theme_015",
+    "title": "ぶるんぶるん",
+    "description": "「とある春の夜の夢2」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB カロンのセリフ"
+  }
+]

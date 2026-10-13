@@ -1,242 +1,3529 @@
 [
   {
     "id": "m_001",
-    "title": "斬撃一閃",
-    "description": "斬撃属性のスキルを持つ人格のみでクリアする",
-    "level": 3,
-    "tags": ["affinity_slash"],
-    "conflicts": ["affinity_pierce", "affinity_blunt"]
+    "title": "地獄のバスツアー",
+    "description": "章テーマパックのCAUTION!がついているパックを1章から9章まで順に選択し鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_002",
-    "title": "貫通突撃",
-    "description": "貫通属性のスキルを持つ人格のみでクリアする",
-    "level": 3,
-    "tags": ["affinity_pierce"],
-    "conflicts": ["affinity_slash", "affinity_blunt"]
+    "title": "Isn't that enough?",
+    "description": "4章テーマパックである、「巣・工房・技術」、「落花」、「流す者たち」、「変わらない」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「FlyMyWings」"
   },
   {
     "id": "m_003",
-    "title": "打撃粉砕",
-    "description": "打撃属性のスキルを持つ人格のみでクリアする",
+    "title": "My compass is curiocity.",
+    "description": "5章テーマパックである、「レイクワールド」、「這い寄る深淵」、「悪に規定される」を選択し鏡ダンジョンをクリア",
     "level": 3,
-    "tags": ["affinity_blunt"],
-    "conflicts": ["affinity_slash", "affinity_pierce"]
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Compass」"
   },
   {
     "id": "m_004",
-    "title": "火傷の宴",
-    "description": "火傷効果を付与できる人格・E.G.Oを中心に編成する",
-    "level": 2,
-    "tags": ["keyword_burn"],
-    "conflicts": ["keyword_sinking"]
+    "title": "How much I wished for another.",
+    "description": "6章テーマパックである、「邸宅の副産物」、「とある世界」、「心のすれ違う」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Through Patches of Violet」"
   },
   {
     "id": "m_005",
-    "title": "沈潜の静寂",
-    "description": "沈潜効果を付与できる人格・E.G.Oを中心に編成する",
-    "level": 2,
-    "tags": ["keyword_sinking"],
-    "conflicts": ["keyword_burn"]
+    "title": "I am my biggest fan.",
+    "description": "7章テーマパックである、「再び開かれたラ・マンチャランド」、「終わらぬ行列」、「夢の終わる」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Hero」"
   },
   {
     "id": "m_006",
-    "title": "出血の惨劇",
-    "description": "出血効果を付与できる人格を中心にしてクリアする",
+    "title": "I used to think it's not worth it.",
+    "description": "8章テーマパックである、「四代家門と欲望」、「眺めることしかできない」を選択し鏡ダンジョンをクリア",
     "level": 2,
-    "tags": ["keyword_bleed"],
-    "conflicts": []
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「Tian Tian」"
   },
   {
     "id": "m_007",
-    "title": "破裂の衝撃",
-    "description": "破裂効果を付与できる人格を中心にしてクリアする",
-    "level": 2,
-    "tags": ["keyword_rupture"],
-    "conflicts": []
+    "title": "You know, it is not so bad.",
+    "description": "9章テーマパックである、「幻惑・彷徨・不信」、「教本」、「剣と作品」、「断ち切れない」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Mili「SAIKAI」"
   },
   {
     "id": "m_008",
-    "title": "振動共鳴",
-    "description": "振動効果を付与できる人格を中心にしてクリアする",
-    "level": 2,
-    "tags": ["keyword_tremor"],
-    "conflicts": []
+    "title": "鉄道マスター",
+    "description": "鉄道系パックを全て選択し鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_009",
-    "title": "呼吸集中",
-    "description": "呼吸効果を活用する人格を中心にしてクリアする",
-    "level": 2,
-    "tags": ["keyword_poise"],
-    "conflicts": []
+    "title": "試練に立ち向かえ",
+    "description": "「紫の白昼」、「琥珀の夕暮れ」、「緑の黎明」を選択し鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "Lobotomy Corporation"
   },
   {
     "id": "m_010",
-    "title": "充電完了",
-    "description": "充電効果を活用する人格を中心にしてクリアする",
+    "title": "カニ道楽",
+    "description": "「う・み・ダ」、「う・み・ダ・かに・バル」を選択し鏡ダンジョンをクリア",
     "level": 2,
-    "tags": ["keyword_charge"],
-    "conflicts": []
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_011",
-    "title": "初期人格のみで踏破",
-    "description": "LCB囚人人格（★1人格）のみでクリアする",
-    "level": 5,
-    "tags": ["identity_lcb", "restriction_hard"],
-    "conflicts": ["identity_star3"]
+    "title": "ねじれの展覧会(これ該当パックこれで問題ないのか?)",
+    "description": "「ヘルズチキン」、「肉斬骨断」、「時間殺人時間」、「LCB定期検診」、「美しい声」を選択し鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_012",
-    "title": "★3人格重視",
-    "description": "編成人格をすべて★3人格にしてクリアする",
-    "level": 1,
-    "tags": ["identity_star3"],
-    "conflicts": ["identity_lcb"]
+    "title": "全員、処刑だ！",
+    "description": "「即決処刑の時間」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB リカルドのセリフ"
   },
   {
     "id": "m_013",
-    "title": "E.G.O資源節約",
-    "description": "ダンジョン全体でE.G.Oスキルを合計3回以下しか使用しない",
-    "level": 4,
-    "tags": ["ego_save"],
-    "conflicts": ["ego_spam"]
+    "title": "我が名はキホーテ！",
+    "description": "「ラ・マンチャランドの主」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB ドンキホーテのセリフ"
   },
   {
     "id": "m_014",
-    "title": "E.G.O連発",
-    "description": "各階層のボス戦で合計5回以上E.G.Oを使用する",
+    "title": "どうすりゃ俺っちの命だけでも助かるんや？",
+    "description": "「挿翅虎」を選択し鏡ダンジョンをクリア",
     "level": 2,
-    "tags": ["ego_spam"],
-    "conflicts": ["ego_save"]
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB レイホンのセリフ"
   },
   {
     "id": "m_015",
-    "title": "コスト温存の達人",
-    "description": "ショップでコストを累計300以上残してクリアする",
-    "level": 3,
-    "tags": ["cost_save"],
-    "conflicts": ["cost_spend"]
+    "title": "ぶるんぶるん",
+    "description": "「とある春の夜の夢2」を選択し鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "テーマパック"
+    ],
+    "note": "",
+    "source": "LCB カロンのセリフ"
   },
   {
     "id": "m_016",
-    "title": "コスト使い尽くし",
-    "description": "ショップ利用後にコストが50未満になるよう買い物をする",
-    "level": 2,
-    "tags": ["cost_spend"],
-    "conflicts": ["cost_save"]
+    "title": "火旺の節",
+    "description": "火傷キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_017",
-    "title": "特定所属：N社",
-    "description": "N社所属人格を3名以上編成してクリアする",
-    "level": 3,
-    "tags": ["faction_ncorp"],
-    "conflicts": ["faction_wcorp"]
+    "title": "屍山血海",
+    "description": "出血キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_018",
-    "title": "特定所属：W社",
-    "description": "W社所属人格を3名以上編成してクリアする",
-    "level": 3,
-    "tags": ["faction_wcorp"],
-    "conflicts": ["faction_ncorp"]
+    "title": "異常震域",
+    "description": "振動キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_019",
-    "title": "少人数精鋭",
-    "description": "出撃人格数を3名以下に絞ってクリアする",
-    "level": 5,
-    "tags": ["squad_small"],
-    "conflicts": ["squad_full"]
+    "title": "破竹の勢い",
+    "description": "破裂キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_020",
-    "title": "フルメンバー出撃",
-    "description": "各戦闘で常に最大人数の人格を出撃させてクリアする",
+    "title": "沈潜殺到",
+    "description": "沈潜キーワード人格が5名以上編成された状態で階層ボスを討伐",
     "level": 1,
-    "tags": ["squad_full"],
-    "conflicts": ["squad_small"]
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_021",
-    "title": "回復E.G.O封印",
-    "description": "HPや精神力を回復するE.G.Oを一切使用しない",
-    "level": 3,
-    "tags": ["heal_seal"],
-    "conflicts": []
+    "title": "循環呼吸",
+    "description": "呼吸キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_022",
-    "title": "ギフト大量購入",
-    "description": "ショップでE.G.Oギフトを累計5個以上購入する",
-    "level": 2,
-    "tags": ["gift_buy"],
-    "conflicts": []
+    "title": "霹靂閃電",
+    "description": "充電キーワード人格が5名以上編成された状態で階層ボスを討伐",
+    "level": 1,
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンパック名より"
   },
   {
     "id": "m_023",
-    "title": "ギフト合成挑戦",
-    "description": "休憩所でE.G.Oギフトを2回以上合成する",
+    "title": "百発百中",
+    "description": "弾丸キーワード人格が5名以上編成された状態で階層ボスを討伐(特殊弾丸を含む)",
     "level": 2,
-    "tags": ["gift_combine"],
-    "conflicts": []
+    "tags": [
+      "identity_keyword"
+    ],
+    "conflicts": [
+      "identity_keyword"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_024",
-    "title": "ノーデス完走",
-    "description": "1名の人格も脱落（死亡）させずにクリアする",
-    "level": 4,
-    "tags": ["no_death"],
-    "conflicts": []
+    "title": "異端審問",
+    "description": "N社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_025",
-    "title": "危険ゾーン回避",
-    "description": "危険マス（高難易度戦闘マス）を可能な限り避けて進む",
-    "level": 1,
-    "tags": ["route_safe"],
-    "conflicts": ["route_hard"]
+    "title": "どんな場所へでも10秒でお届けいたします(要原文チェック)",
+    "description": "W社所属人格を5名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "W社スローガン"
   },
   {
     "id": "m_026",
-    "title": "修羅の道",
-    "description": "危険マス（高難易度戦闘マス）を積極的に選んで3回以上踏破する",
-    "level": 4,
-    "tags": ["route_hard"],
-    "conflicts": ["route_safe"]
+    "title": "生存競争",
+    "description": "R社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_026",
+    "title": "TT2プロトコル",
+    "description": "T社所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_026",
+    "title": "引き継がれる意志",
+    "description": "L社所属ないしはリンバス・カンパニー所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_026",
+    "title": "協業関係",
+    "description": "L社,R社,T社,W社それぞれの人格を最低1名編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
   },
   {
     "id": "m_027",
-    "title": "同属性スキル統一",
-    "description": "特定の罪悪属性（例：憤怒）のスキルをメインに戦闘する",
-    "level": 3,
-    "tags": ["sin_affinity"],
-    "conflicts": []
+    "title": "黒獣たちよ、応えろ",
+    "description": "H社所属人格を5名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "君主ホンルS3"
   },
   {
     "id": "m_028",
-    "title": "クイック勝利",
-    "description": "各層のボス戦を6ターン以内で勝利する",
-    "level": 4,
-    "tags": ["speed_run"],
-    "conflicts": []
+    "title": "ハナは皆のために、皆はハナのために",
+    "description": "協会所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "ハナ協会スローガン"
   },
   {
     "id": "m_029",
-    "title": "無傷の序盤",
-    "description": "1〜2階層で人格のHPが50%以下にならないよう立ち回る",
+    "title": "E.G.O.I.S.T",
+    "description": "特性キーワード「E.G.O装備」を保有している人格を3名以上編成して階層ボスを討伐",
     "level": 2,
-    "tags": ["safe_early"],
-    "conflicts": []
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LoR 没エンド"
   },
   {
     "id": "m_030",
-    "title": "名誉人差し指の指針",
-    "description": "ランダム生成された指示（特定パック・条件）を愚直に全遂行する",
+    "title": "鯨を追うものたち",
+    "description": "ピークォド号所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_031",
+    "title": "お頭ぁ！",
+    "description": "剣契所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB エンドゥ"
+  },
+  {
+    "id": "m_032",
+    "title": "みかじめ料を徴収します",
+    "description": "黒雲会所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "ねじれ探偵での出来事(?)"
+  },
+  {
+    "id": "m_033",
+    "title": "悲劇の邸宅",
+    "description": "ワザリング・ハイツ所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "嵐ヶ丘にて、ワザリング・ハイツの別称"
+  },
+  {
+    "id": "m_034",
+    "title": "永遠に続くカーニバル(原文確認)",
+    "description": "ラ・マンチャランド人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LCB 7章"
+  },
+  {
+    "id": "m_035",
+    "title": "礼",
+    "description": "親指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「礼」"
+  },
+  {
+    "id": "m_036",
+    "title": "信",
+    "description": "人差し指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「信」"
+  },
+  {
+    "id": "m_037",
+    "title": "義",
+    "description": "中指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「義」"
+  },
+  {
+    "id": "m_038",
+    "title": "智",
+    "description": "薬指人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「義」"
+  },
+  {
+    "id": "m_039",
+    "title": "仁",
+    "description": "小指人格を2名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "「五常」の１つ「仁」"
+  },
+  {
+    "id": "m_040",
+    "title": "指切り",
+    "description": "蜘蛛の巣所属人格を3名以上編成して階層ボスを討伐",
+    "level": 2,
+    "tags": [
+      "identity_affiliation"
+    ],
+    "conflicts": [
+      "identity_affiliation"
+    ],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": "LoR/LCB"
+  },
+  {
+    "id": "m_040",
+    "title": "当時の厨パ",
+    "description": "鏡屈折鉄道4号線第3区間に登場する嫉妬大罪人格を全て編成し鏡ダンジョン15層をクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_040",
+    "title": "疑問",
+    "description": "「ロボトミー本社」のタグがついた人格のみを編成し「緑の黎明」パックをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "人格編成"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_041",
+    "title": "ギフトコレクターⅠ",
+    "description": "E.G.Oギフトを30個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_042",
+    "title": "ギフトコレクターⅡ",
+    "description": "E.G.Oギフトを50個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_043",
+    "title": "ギフトコレクターⅢ",
+    "description": "E.G.Oギフトを75個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_044",
+    "title": "ギフトコレクターⅣ",
+    "description": "E.G.Oギフトを100個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_045",
+    "title": "ギフトコレクターⅤ(実際に動かしてどれくらい確保できるか要チェック)",
+    "description": "E.G.Oギフトを125個以上保有して、鏡ダンジョンをクリア",
     "level": 5,
-    "tags": ["prescript_master"],
-    "conflicts": []
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_046",
+    "title": "燃える贈り物Ⅰ",
+    "description": "火傷キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_047",
+    "title": "燃える贈り物Ⅱ",
+    "description": "火傷キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_048",
+    "title": "燃える贈り物Ⅲ",
+    "description": "火傷キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_049",
+    "title": "滴る贈り物Ⅰ",
+    "description": "出血キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_050",
+    "title": "滴る贈り物Ⅱ",
+    "description": "出血キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_051",
+    "title": "滴る贈り物Ⅲ",
+    "description": "出血キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_052",
+    "title": "揺れる贈り物Ⅰ",
+    "description": "振動キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_053",
+    "title": "揺れる贈り物Ⅱ",
+    "description": "振動キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_054",
+    "title": "揺れる贈り物Ⅲ",
+    "description": "振動キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_055",
+    "title": "裂ける贈り物Ⅰ",
+    "description": "破裂キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_056",
+    "title": "裂ける贈り物Ⅱ",
+    "description": "破裂キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_057",
+    "title": "裂ける贈り物Ⅲ",
+    "description": "破裂キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_058",
+    "title": "哀しい贈り物Ⅰ",
+    "description": "沈潜キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_059",
+    "title": "哀しい贈り物Ⅱ",
+    "description": "沈潜キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_060",
+    "title": "哀しい贈り物Ⅲ",
+    "description": "沈潜キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_061",
+    "title": "吐き出す贈り物Ⅰ",
+    "description": "呼吸キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_062",
+    "title": "吐き出す贈り物Ⅱ",
+    "description": "呼吸キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_063",
+    "title": "吐き出す贈り物Ⅲ",
+    "description": "呼吸キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_064",
+    "title": "満ちる贈り物Ⅰ",
+    "description": "充電キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_065",
+    "title": "満ちる贈り物Ⅱ",
+    "description": "充電キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_066",
+    "title": "満ちる贈り物Ⅲ",
+    "description": "充電キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_067",
+    "title": "斬る贈り物Ⅰ",
+    "description": "斬撃キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "slash_gift"
+    ],
+    "conflicts": [
+      "slash_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_068",
+    "title": "斬る贈り物Ⅱ",
+    "description": "斬撃キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "slash_gift"
+    ],
+    "conflicts": [
+      "slash_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_069",
+    "title": "貫く贈り物Ⅰ",
+    "description": "貫通キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "piece_gift"
+    ],
+    "conflicts": [
+      "piece_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_070",
+    "title": "貫く贈り物Ⅱ",
+    "description": "貫通キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "piece_gift"
+    ],
+    "conflicts": [
+      "piece_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_071",
+    "title": "打つ贈り物Ⅰ",
+    "description": "打撃キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "blunt_gift"
+    ],
+    "conflicts": [
+      "blunt_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_072",
+    "title": "打つ贈り物Ⅱ",
+    "description": "打撃キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "blunt_gift"
+    ],
+    "conflicts": [
+      "blunt_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_073",
+    "title": "レアな贈り物Ⅰ",
+    "description": "4ティアE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_074",
+    "title": "レアな贈り物Ⅱ",
+    "description": "4ティアE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_075",
+    "title": "レアな贈り物Ⅲ",
+    "description": "4ティアE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_076",
+    "title": "レアな贈り物Ⅳ",
+    "description": "4ティアE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_077",
+    "title": "レアな贈り物Ⅴ",
+    "description": "4ティアE.G.Oギフトを25個以上保有して、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_078",
+    "title": "スペシャルな贈り物Ⅰ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを2個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_079",
+    "title": "スペシャルな贈り物Ⅱ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを4個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_080",
+    "title": "スペシャルな贈り物Ⅲ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを6個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_081",
+    "title": "スペシャルな贈り物Ⅳ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを8個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_082",
+    "title": "スペシャルな贈り物Ⅴ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_083",
+    "title": "数量限定な贈り物Ⅰ",
+    "description": "テーマパック限定合成E.G.Oギフトを3個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_084",
+    "title": "数量限定な贈り物Ⅱ",
+    "description": "テーマパック限定合成E.G.Oギフトを6個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_085",
+    "title": "数量限定な贈り物Ⅲ",
+    "description": "テーマパック限定合成E.G.Oギフトを9個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_086",
+    "title": "すくすく育つ",
+    "description": "植物系のE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 薔薇の冠,白い綿花,稲妻の枝,カーミラ,棘の投げ縄,茨の道,赤く染まった綿花,四つ葉のクローバー,快感,縛り付けた枷,安息の地,古木の罠,ミラルカ,茨の早縄,捨てられた枝,色の花びら,桃色の花びらの束,檀香梅の枝,茨の冠,くびき,小枝,貪欲する棘",
+    "source": ""
+  },
+  {
+    "id": "m_087",
+    "title": "鏡世界の動物園",
+    "description": "動物が描かれているE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 地獄蝶の夢,キズモドキ,緋色の蛾の群れ,狐雨,真冬の夜の悪夢,死にたがり,カンタービレ,閉じ込められた蛆虫,子心,安息",
+    "source": ""
+  },
+  {
+    "id": "m_088",
+    "title": "勤勉な囚人",
+    "description": "本のE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 燃え上がる知性,料理の秘伝書,新商品のパンフレット,特別カタログ,体験型プランガイド,デュエル教本 3巻,仕返し帳簿,本国剣譜,盗まれたフィクサー雑誌,仕返し帳簿 : 番外,釘と金槌の本,完全さ,チーフバトラーの秘笈書,近接戦術教本",
+    "source": ""
+  },
+  {
+    "id": "m_089",
+    "title": "7刀流",
+    "description": "剣/刀のE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 宣告の瞬間,致誠,短いケインソード,割れた大剣,熱線武器,誰かの蒼い刀,菖蒲剣,壮観,不動,E式次元短剣,絶景,琢磨,刻み込まれた怪文字,涙で研ぎ澄まされた剣,血炎刀",
+    "source": ""
+  },
+  {
+    "id": "m_090",
+    "title": "7つ集めるとどんな願いでも叶えられる石",
+    "description": "E.G.Oギフトである各属性の欠片を全て保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": "ドラゴンボール"
+  },
+  {
+    "id": "m_091",
+    "title": "とある誰かの記憶",
+    "description": "E.G.Oギフト「月の記憶」を保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "own_lunar_memory"
+    ],
+    "conflicts": [
+      "not_own_lunar_memory"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_092",
+    "title": "月はあなたを見つめていない",
+    "description": "E.G.Oギフト「月の記憶」を一度も獲得せずに、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "not_own_lunar_memory"
+    ],
+    "conflicts": [
+      "own_lunar_memory"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_093",
+    "title": "ダブルムーン",
+    "description": "E.G.Oギフト「月の記憶」を2度入手し(lv5合成用ギフトの名前を引用したい)、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [
+      "not_own_lunar_memory"
+    ],
+    "displayTags": [
+      "ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_093",
+    "title": "7色の生地",
+    "description": "E.G.Oギフト「絡まる因縁」の効果をそれぞれの罪悪属性で発動して鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_093",
+    "title": "死の舞踏",
+    "description": "E.G.Oギフト「砕ける定めの大砲」の効果を最大まで発動し戦闘をクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_093",
+    "title": "不自由ない暮らし",
+    "description": "鏡ダンジョンクリア時にコストを1000以上残してクリアする",
+    "level": 1,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_094",
+    "title": "🐶「お金が必要です」",
+    "description": "鏡ダンジョンクリア時にコストを3000以上残してクリアする",
+    "level": 3,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_095",
+    "title": "富と名誉",
+    "description": "鏡ダンジョンクリア時にコストを5000以上残してクリアする",
+    "level": 5,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_096",
+    "title": "買い物上手",
+    "description": "ショップ利用後にコストが0になるよう買い物をする",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_096",
+    "title": "一期一会",
+    "description": "ショップを訪れるたびに人格を必ず1人以上交換する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_097",
+    "title": "複製ウサギは連続切断の夢を見るか？",
+    "description": "味方1名のスキル1とスキル2をショップで全てスキル3に交換してクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_098",
+    "title": "じりじりと焼ける傷",
+    "description": "敵1体へ付与された火傷威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_burn"
+    ],
+    "conflicts": [
+      "apply_burn"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB リアンのデバフ"
+  },
+  {
+    "id": "m_099",
+    "title": "アイ・アム・ファ～イヤ～",
+    "description": "敵1体へ付与された火傷威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_burn"
+    ],
+    "conflicts": [
+      "apply_burn"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR steam実績(Mili「Iron Rotus」)"
+  },
+  {
+    "id": "m_100",
+    "title": "ちょっとチクってしますよ～",
+    "description": "敵1体へ付与された出血威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_bleed"
+    ],
+    "conflicts": [
+      "apply_bleed"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_101",
+    "title": "大量出血",
+    "description": "敵1体へ付与された出血威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_bleed"
+    ],
+    "conflicts": [
+      "apply_bleed"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB 振動の種類の1つ"
+  },
+  {
+    "id": "m_102",
+    "title": "ぐぇん、ぐぇん",
+    "description": "敵1体へ付与された振動威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_tremor"
+    ],
+    "conflicts": [
+      "apply_tremor"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB 泣きヒキガエル"
+  },
+  {
+    "id": "m_103",
+    "title": "反響化",
+    "description": "敵1体へ付与された振動威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_tremor"
+    ],
+    "conflicts": [
+      "apply_tremor"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "SlayTheSpire カード"
+  },
+  {
+    "id": "m_104",
+    "title": "MAO!(卯!)",
+    "description": "敵1体へ付与された破裂威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_rupture"
+    ],
+    "conflicts": [
+      "apply_rupture"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "WAO!を黒獣-卯-でもじったもの"
+  },
+  {
+    "id": "m_105",
+    "title": "「お札」参り",
+    "description": "敵1体へ付与された破裂威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_rupture"
+    ],
+    "conflicts": [
+      "apply_rupture"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ロボトミーE.G.O::紅籍シンクレアが扱うデバフ「お札」"
+  },
+  {
+    "id": "m_106",
+    "title": "萎え落ち",
+    "description": "敵1体へ付与された沈潜威力が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_sinking"
+    ],
+    "conflicts": [
+      "apply_sinking"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ゲーム用語。例「あいつ萎え落ちしたわ」"
+  },
+  {
+    "id": "m_107",
+    "title": "過激な判断",
+    "description": "敵1体へ付与された沈潜威力・回数が99を達成(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_sinking"
+    ],
+    "conflicts": [
+      "apply_sinking"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "奥歯ボートセンターフィクサーイシュメール S3"
+  },
+  {
+    "id": "m_108",
+    "title": "過呼吸",
+    "description": "味方1名へ付与した呼吸威力が99を達成",
+    "level": 1,
+    "tags": [
+      "apply_poise"
+    ],
+    "conflicts": [
+      "apply_poise"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "南部シ協会5課ドンキホーテ S3"
+  },
+  {
+    "id": "m_109",
+    "title": "ノンブレス・オブリージュ",
+    "description": "味方1名へ付与した呼吸威力・回数が99を達成",
+    "level": 4,
+    "tags": [
+      "apply_poise"
+    ],
+    "conflicts": [
+      "apply_poise"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ピノキオPの曲。そちらもフランス語の「ノブレス・オブリージュ」のもじり"
+  },
+  {
+    "id": "m_110",
+    "title": "過充電",
+    "description": "味方1名へ付与した充電威力が10を達成(特殊充電を含む、威力固定の特殊充電を除く)",
+    "level": 1,
+    "tags": [
+      "apply_charge"
+    ],
+    "conflicts": [
+      "apply_charge"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR バトルページ"
+  },
+  {
+    "id": "m_111",
+    "title": "オーバクロック",
+    "description": "味方1名へ付与した充電威力が30を達成(特殊充電を含む、威力固定の特殊充電を除く)",
+    "level": 4,
+    "tags": [
+      "apply_charge"
+    ],
+    "conflicts": [
+      "apply_charge"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "周波数を規定の値より引き上げること。主にCPUに対して使われる。自己責任で。"
+  },
+  {
+    "id": "m_112",
+    "title": "人間とは脆いものだ(原典確認)",
+    "description": "敵1体へ付与された脆弱が10を達成(集中戦闘の場合は部位でチェック)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LC ビナー"
+  },
+  {
+    "id": "m_113",
+    "title": "絶好調",
+    "description": "味方1名へ付与されたダメージ増加が10を達成",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_114",
+    "title": "切れ味が強い",
+    "description": "味方1名へ付与された「攻撃レベル増加」が30を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "攻撃レベルが増加した値ではなく、攻撃レベル増加のバフの付与量です",
+    "source": ""
+  },
+  {
+    "id": "m_115",
+    "title": "あなたの盾",
+    "description": "味方1名のいずれかのスロットの挑発値が10を達成",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "ツヴァイ協会スローガン"
+  },
+  {
+    "id": "m_116",
+    "title": "戦闘準備",
+    "description": "味方1名へ付与された保護が10を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR バトルページ"
+  },
+  {
+    "id": "m_117",
+    "title": "数多のものが締め付けてくる…",
+    "description": "敵1体へ付与された束縛が10を達成(集中戦闘の場合は部位でチェック)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB ムルソー初期E.G.O「他人の鎖」"
+  },
+  {
+    "id": "m_118",
+    "title": "最強腕前",
+    "description": "味方1名へ付与されたクイックが10を達成",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LoR とあるパッシブとパッシブの組み合わせの俗称"
+  },
+  {
+    "id": "m_119",
+    "title": "One for All",
+    "description": "味方1名にプラス効果(黄色文字)を5種付与する",
+    "level": 1,
+    "tags": [
+      "apply_buff"
+    ],
+    "conflicts": [
+      "apply_buff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_120",
+    "title": "All for One",
+    "description": "味方1名にプラス効果(黄色文字)を10種付与する",
+    "level": 3,
+    "tags": [
+      "apply_buff"
+    ],
+    "conflicts": [
+      "apply_buff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_121",
+    "title": "虹色のパレット",
+    "description": "1つの対象にマイナス効果(赤色文字)を5種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 1,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_122",
+    "title": "秀作",
+    "description": "1つの対象にマイナス効果(赤色文字)を10種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 2,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": "LCB E.G.Oギフト"
+  },
+  {
+    "id": "m_123",
+    "title": "大きなアトリエ",
+    "description": "1つの対象にマイナス効果(赤色文字)を15種付与する(集中戦闘の場合は部位でチェック)",
+    "level": 4,
+    "tags": [
+      "apply_debuff"
+    ],
+    "conflicts": [
+      "apply_debuff"
+    ],
+    "displayTags": [
+      "キーワード付与"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_124",
+    "title": "時計を回す番だ...",
+    "description": "味方の攻撃で他の味方を死亡させる",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_125",
+    "title": "マッチ拒否",
+    "description": "防御スキルのみを使用し階層ボスをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_126",
+    "title": "感情制御",
+    "description": "E.G.Oスキルのみを使用し階層ボスをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_127",
+    "title": "孤独な囚人",
+    "description": "一人のみを戦闘に出撃させ、階層ボスをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LoRパッシブ「孤独なフィクサー」のもじり"
+  },
+  {
+    "id": "m_128",
+    "title": "僕は屈しません！",
+    "description": "「シンクレア」のスキルで「完全な人間を夢見るクローマー」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_129",
+    "title": "引き継がれる夢",
+    "description": "「イサン」のスキルで「開花E.G.O::舎音」か「全てを否定するドンラン」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_130",
+    "title": "旅の開始点",
+    "description": "「イシュメール」のスキルで「エイハブ」か「開花E.G.O::ガスハープーン」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_131",
+    "title": "2つの紐が交わる",
+    "description": "「ヒースクリフ」のスキルで「魔王ヒースクリフ」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_132",
+    "title": "夢からさめた夢",
+    "description": "「ドンキホーテ」のスキルで「サンチョ」か「ドンキホーテ」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_132",
+    "title": "正義執行",
+    "description": "LCB囚人人格「ドンキホーテ」を編成した状態で「コードパープル」パックをクリアする",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_133",
+    "title": "僕の本当の心･･･",
+    "description": "「ホンル」のスキルで「ジア・チォウ」か「混覚轀輬黒獣(ジア・ムー)」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LCB「ジア・チォウ」戦で「ホンル」に付与されるバフの名前"
+  },
+  {
+    "id": "m_134",
+    "title": "全てを断ち切る決意",
+    "description": "「良秀」のスキルでいずれかの親方か「レイホン」を討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_135",
+    "title": "ドッペルゲンガー",
+    "description": "自身と同じ姿をした嫉妬大罪を討伐する(外形投影可)",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_136",
+    "title": "不孝行",
+    "description": "血鬼人格を使用し、自身より上位の血鬼を討伐する(例: ラ・マンチャランド神父 グレゴールでドゥルシネーア/サンチョ/ドンキホーテのいずれかを討伐)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LCB ワープ特急殺人事件での「サンチョ」のセリフ"
+  },
+  {
+    "id": "m_137",
+    "title": "制約 -レベル強化-",
+    "description": "「レベル強化」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_138",
+    "title": "制約 -衰弱-",
+    "description": "「衰弱」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_139",
+    "title": "制約 -炎の烙印-",
+    "description": "「炎の烙印」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_140",
+    "title": "制約 -インフレーション-",
+    "description": "「インフレーション」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_141",
+    "title": "制約 -自我干渉-",
+    "description": "「自我干渉」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_142",
+    "title": "制約 -戦力の再分配-",
+    "description": "「戦力の再分配」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_143",
+    "title": "制約 -精神錯乱-",
+    "description": "「精神錯乱」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_144",
+    "title": "制約 -神経促進-",
+    "description": "「神経促進」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_145",
+    "title": "制約 -精神力枯渇-",
+    "description": "「精神力枯渇」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_146",
+    "title": "制約 -精神的高揚-",
+    "description": "「精神的高揚」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_147",
+    "title": "制約 -振動遮断-",
+    "description": "「振動遮断」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_148",
+    "title": "制約 -バリア生成-",
+    "description": "「バリア生成」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_149",
+    "title": "制約 -生命力増幅-",
+    "description": "「生命力増幅」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_150",
+    "title": "制約 -破壊力-",
+    "description": "「破壊力」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_151",
+    "title": "制約 -亀裂増幅-",
+    "description": "「亀裂増幅」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_152",
+    "title": "制約 -状態異常付与-",
+    "description": "「状態異常付与」の制約を1つ以上選択して鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_153",
+    "title": "制約ポイントⅠ",
+    "description": "制約ポイントが10点以上で鏡ダンジョン階層をクリア",
+    "level": 1,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_154",
+    "title": "制約ポイントⅡ",
+    "description": "制約ポイントが20点以上で鏡ダンジョン階層をクリア",
+    "level": 2,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_155",
+    "title": "制約ポイントⅢ",
+    "description": "制約ポイントが30点以上で鏡ダンジョン階層をクリア",
+    "level": 3,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_156",
+    "title": "制約ポイントⅣ",
+    "description": "制約ポイントが40点以上で鏡ダンジョン階層をクリア",
+    "level": 3,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_157",
+    "title": "制約ポイントⅤ",
+    "description": "制約ポイントが50点以上で鏡ダンジョン階層をクリア",
+    "level": 4,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_158",
+    "title": "制約ポイントⅥ",
+    "description": "制約ポイントが60点以上で鏡ダンジョン階層をクリア",
+    "level": 5,
+    "tags": [
+      "adversities_point"
+    ],
+    "conflicts": [
+      "adversities_point"
+    ],
+    "displayTags": [
+      "エクストリーム-制約-"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_159",
+    "title": "超・やり過ぎⅠ",
+    "description": "スキル3を使用し、スキル1回で1000以上のダメージを与える(S3使用時に画面に出てくる値を参照)",
+    "level": 1,
+    "tags": [
+      "deal_damage"
+    ],
+    "conflicts": [
+      "deal_damage"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "Minecraftの実績"
+  },
+  {
+    "id": "m_160",
+    "title": "超・やり過ぎⅡ",
+    "description": "スキル3を使用し、スキル1回で3000以上のダメージを与える(S3使用時に画面に出てくる値を参照)",
+    "level": 2,
+    "tags": [
+      "deal_damage"
+    ],
+    "conflicts": [
+      "deal_damage"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "Minecraftの実績"
+  },
+  {
+    "id": "m_161",
+    "title": "超・やり過ぎⅢ",
+    "description": "スキル3を使用し、スキル1回で5000以上のダメージを与える(S3使用時に画面に出てくる値を参照)",
+    "level": 3,
+    "tags": [
+      "deal_damage"
+    ],
+    "conflicts": [
+      "deal_damage"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "Minecraftの実績"
+  },
+  {
+    "id": "m_162",
+    "title": "超・やり過ぎⅣ",
+    "description": "スキル3を使用し、スキル1回で10000以上のダメージを与える(S3使用時に画面に出てくる値を参照)",
+    "level": 4,
+    "tags": [
+      "deal_damage"
+    ],
+    "conflicts": [
+      "deal_damage"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "Minecraftの実績"
+  },
+  {
+    "id": "m_163",
+    "title": "超・やり過ぎⅤ",
+    "description": "スキル3を使用し、スキル1回で20000以上のダメージを与える(S3使用時に画面に出てくる値を参照)",
+    "level": 5,
+    "tags": [
+      "deal_damage"
+    ],
+    "conflicts": [
+      "deal_damage"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "Minecraftの実績"
+  },
+  {
+    "id": "m_164",
+    "title": "圧倒的な力で！Ⅰ",
+    "description": "マッチ力80以上を達成する",
+    "level": 2,
+    "tags": [
+      "match_power"
+    ],
+    "conflicts": [
+      "match_power"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_165",
+    "title": "圧倒的な力で！Ⅱ",
+    "description": "マッチ力90以上を達成する",
+    "level": 3,
+    "tags": [
+      "match_power"
+    ],
+    "conflicts": [
+      "match_power"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_166",
+    "title": "圧倒的な力で！Ⅲ",
+    "description": "マッチ力100以上を達成する",
+    "level": 4,
+    "tags": [
+      "match_power"
+    ],
+    "conflicts": [
+      "match_power"
+    ],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_167",
+    "title": "取れたら勝ち確ギフト",
+    "description": "乱入ボスを1体以上討伐する",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_167",
+    "title": "勝利のため",
+    "description": "自身のスキルの効果でダメージを受ける",
+    "level": 1,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_168",
+    "title": "十人十色",
+    "description": "全ての囚人が異なる罪悪属性のスキルを使用する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_169",
+    "title": "一方的な殺戮行為",
+    "description": "囚人1名が、自身の最大体力よりも高いバリア数値を得る",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_170",
+    "title": "模範的管理人",
+    "description": "鏡ダンジョンのプレイを通して、1名の人格も死亡させずにクリアする",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_171",
+    "title": "一番美しいのは私",
+    "description": "「女王林檎」をあなたが一番好きな人格で討伐する。",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_172",
+    "title": "終末時計は存在しない",
+    "description": "「終末カレンダー」を1ターンで討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "世界情勢を示す時計「終末時計」"
+  },
+  {
+    "id": "m_173",
+    "title": "その悪夢に終止符を",
+    "description": "「黄金色の林檎」をグレゴールが討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_174",
+    "title": "",
+    "description": "強くなったよ！マジで？",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_175",
+    "title": "真に都市を愛するもの",
+    "description": "「お前ぶたれたい？しこたま？」の戦闘中に発生する2つ目のイベントの選択肢で、「そうである。」を押し続ける。",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_176",
+    "title": "",
+    "description": "誘惑する桃色の靴",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_177",
+    "title": "",
+    "description": "路地の番犬",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_178",
+    "title": "神BGM",
+    "description": "「斬首魚」をBGMが再生されていない状態で討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "モンスターハンター「フルフル」。遠目で見たらフルフルに見えないこともない?"
+  },
+  {
+    "id": "m_179",
+    "title": "カエルは可愛がるもの",
+    "description": "「泣きヒキガエル」の左目と右目を部位破壊せずに討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_180",
+    "title": "機械にも心はある",
+    "description": "「kqj-1j-23」に対し一方攻撃を行わずに討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LCB 鏡ダンジョンのイベントにて、ダンテに「バカ」と呼ばれ怒ったことから。"
+  },
+  {
+    "id": "m_181",
+    "title": "釈迦の説法",
+    "description": "「我、空に至れり」戦にて、「業報」を108貯め、任意のユニットを死亡させる",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_182",
+    "title": "上手に焼けました！",
+    "description": "「ボンちゃんパパ」を火傷で討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "モンスターハンターシリーズ"
+  },
+  {
+    "id": "m_183",
+    "title": "長く苦しい拷問",
+    "description": "「真鍮の雄牛 - 涙を流す」の頭部位にダメージを与えずに討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "「真鍮の雄牛 - 涙を流す」の元ネタ、「ファラリスの雄牛」は拷問器具。"
+  },
+  {
+    "id": "m_184",
+    "title": "二日酔い",
+    "description": "「紳士妖精」をE.G.Oギフト「連成振動」の効果で強制混乱させる",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_185",
+    "title": "",
+    "description": "誰も泣かぬように",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_186",
+    "title": "",
+    "description": "さすらいの狐",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_187",
+    "title": "変身中は攻撃しないって言ったよね？！",
+    "description": "「衝撃ムカデ」が1ターン目に展開する頭部位のバリアを1ターン目に削りきり、混乱状態にする",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "アニメ等で変身シーンは攻撃しないというお決まりのやつ"
+  },
+  {
+    "id": "m_188",
+    "title": "ラッキー系?",
+    "description": "足長妖精",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_189",
+    "title": "全てを巻き戻す時計",
+    "description": "「蒸気運搬機械」に対し、現在の時間と同じ数値の振動威力/回数を付与する(部位でチェック)",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "威力が時間(hour)部分、回数が分(minute)部分を指す形で振動を付与。",
+    "source": "LCのスポンサーアブノーマリティー「逆光時計」。動作時に、ランプを点灯させた時間と対応する桁の数字が表示される。"
+  },
+  {
+    "id": "m_190",
+    "title": "生足魅惑のマーメイド",
+    "description": "「妖精提灯」が付与する魅惑の対象に、下半身の肌が露出している人格が含まれている(外形投影可)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "戦闘SDにおいて、肌の色が見える人格を対象とします(例: 奥歯ボートセンターフィクサー シンクレア, 人差し指代行者-開花E.G.O::代行 ドンキホーテ, 家主候補 イシュメール等)",
+    "source": "「T.M.Revolution」の曲「HOT LIMIT」の歌詞"
+  },
+  {
+    "id": "m_191",
+    "title": "windows?",
+    "description": "道を失った乗客",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_192",
+    "title": "世界に一つだけの花",
+    "description": "「薔薇の掲示板」が生成する薔薇を、全て異なる色にして7つ生成させる。",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "「SMAP」の曲「世界に一つだけの花」"
+  },
+  {
+    "id": "m_193",
+    "title": "It's dancing time!",
+    "description": "「歩く真珠」を「マリアッチボス シンクレア」で討伐する",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "「Deltarune」の曲、「It's tv time!」のもじり。なんでこの貝は踊ってるんですか?"
+  },
+  {
+    "id": "m_194",
+    "title": "前が見えねぇ",
+    "description": "「皮膚の預言者」にスキル「6章5節」を使用させる。",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "「クレヨンしんちゃん」コミックスより"
+  },
+  {
+    "id": "m_195",
+    "title": "ブドウ味のキャンディをおくれ",
+    "description": "「夢貪る濁流」に「良秀 ソーダ」か「ホンル ソーダ」E.G.Oを使用する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "「夢貪る濁流」はLCで登場した「夢見る流れ」の変異体だと思われる。その「夢見る流れ」のフレーバーテキストから"
+  },
+  {
+    "id": "m_196",
+    "title": "汚物は消毒だ～",
+    "description": "「宿した綿花」をE.G.Oギフト「白い綿花」,「赤く染まった綿花」,「縛り付けた枷」を保有していない状態で討伐する",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "マンガ「北斗の拳」より"
+  },
+  {
+    "id": "m_197",
+    "title": "",
+    "description": "紅炎蛾",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_198",
+    "title": "",
+    "description": "軽蔑の螺旋",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_199",
+    "title": "トナカイの反逆",
+    "description": "R社トナカイチームの人格を3人以上編成して「サンタータ」を討伐する。",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_200",
+    "title": "",
+    "description": "ムルソー頭目人格で「キムサッガッ」を討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_201",
+    "title": "",
+    "description": "妖精の祭典",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_202",
+    "title": "",
+    "description": "ネリー",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_203",
+    "title": "",
+    "description": "在りし日の肖像",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_204",
+    "title": "電気羊は生物への夢を見るか？",
+    "description": "「夢見る電気羊」戦にて、黒獣-未-人格を参加させ討伐する(外形投影可)",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "小説「アンドロイドは電気羊の夢を見るか？」のもじり"
+  },
+  {
+    "id": "m_205",
+    "title": "王への謁見",
+    "description": "縛られた王",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_206",
+    "title": "時間は無駄にはできない",
+    "description": "「時間殺人鬼」のフェーズ移行演出を見ずにクリアする(実現可能か調べること)",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_207",
+    "title": "血を寄こせ...",
+    "description": "「カセッティ」が使用するスキル「我は···この行進の···王子である···！」のスキル効果でカセッティを回復させない",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_208",
+    "title": "",
+    "description": "痛がるテディ",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_209",
+    "title": "ハイパーとラッパー",
+    "description": "「薔薇の狩人」の縄で3人以上捕獲される",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_210",
+    "title": "",
+    "description": "「過ぎ去りし日の寝袋」->いらないかも",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_211",
+    "title": "",
+    "description": "凶弾の射手",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_212",
+    "title": "",
+    "description": "「四百輪の薔薇」->ランダムなのでいらないかも",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_213",
+    "title": "さあ、実験を始めよう。",
+    "description": "「ねじれたホーエンハイム」が付与するデバフ、「被観察者」を最大まで貯める",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_214",
+    "title": "",
+    "description": "ジア・ファン",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_215",
+    "title": "",
+    "description": "クボ",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_216",
+    "title": "歪んだ正義",
+    "description": "「憎悪と絶望」テーマパックにおいて、憎しみの女王が絶望の女王を討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_217",
+    "title": "落馬",
+    "description": "速度10以上を達成した人格が、次のターンに速度1となる",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_218",
+    "title": "痛み分け",
+    "description": "囚人と敵が同時に死亡した",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  },
+  {
+    "id": "m_219",
+    "title": "ターン制バトルの崩壊",
+    "description": "1ターン内にスキルを15回使用する(E.G.Oギフトやスキル効果による再使用、パッシブによるスキル発動を含む)",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_220",
+    "title": "罪悪共鳴RPG",
+    "description": "毎ターン完全共鳴(同罪悪属性スキルを連続で3つ繋げる)を作り、戦闘をクリアする",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "LCB ゲームジャンル"
+  },
+  {
+    "id": "m_221",
+    "title": "Will of the city",
+    "description": "1~15階層までのパック選択を指令(パックランダム抽選)に委ね全て遂行する",
+    "level": 5,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_222",
+    "title": "不老不死",
+    "description": "「ホンル」が「汚血泣涙-終」を使用したターンに死亡しない",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_223",
+    "title": "強化刺青",
+    "description": "「中指」所属人格が「大器晩成型タトゥー」の効果で攻撃レベル/防御レベル増加5のバフを得る",
+    "level": 2,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_224",
+    "title": "心臓、心臓を狙え！",
+    "description": "蜘蛛の巣 親指の子方ヒースクリフのパッシブ、「必死の奮戦」によってヒースクリフの追撃を発動させ、その追撃で敵を倒す",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": "蜘蛛の巣 親指の親方ロージャの戦闘中セリフ"
+  },
+  {
+    "id": "m_224",
+    "title": "時代遅れの芸術",
+    "description": "「カリスト」を時間猶予のダメージで倒す",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "m_224",
+    "title": "全てのヒースクリフは死ななければならない",
+    "description": "嫉妬大罪の「ヒースクリフ」と「魔王ヒースクリフ」の両方を討伐する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "戦闘"
+    ],
+    "note": "",
+    "source": ""
   }
 ]

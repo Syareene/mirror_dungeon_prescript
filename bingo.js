@@ -2,7 +2,7 @@
  * ビンゴシステム (bingo.js)
  */
 
-const BINGO_STORAGE_KEY = 'lcb_bingo_board_v1';
+const BINGO_STORAGE_KEY = 'lcb_bingo_board_v2';
 
 class BingoManager {
     constructor() {
@@ -14,10 +14,25 @@ class BingoManager {
 
     async init() {
         try {
-            const res = await fetch('missions.json');
-            this.missions = await res.json();
+            this.missions = typeof window.fetchAllMissions === 'function'
+                ? await window.fetchAllMissions()
+                : await (async () => {
+                    const files = [
+                        'missions/theme_pack.json',
+                        'missions/identity.json',
+                        'missions/shop_gift.json',
+                        'missions/battle.json',
+                        'missions/keyword.json',
+                        'missions/extreme.json'
+                    ];
+                    const res = await Promise.all(files.map(f => fetch(f)));
+                    const data = await Promise.all(res.map(r => r.json()));
+                    return data.flat();
+                })();
         } catch (e) {
-            console.error("Bingo: missions.json の取得に失敗しました:", e);
+            console.error("Bingo: ミッションデータの取得に失敗しました:", e);
+            this.loadError = true;
+            this.render();
             return;
         }
 
@@ -92,13 +107,13 @@ class BingoManager {
         for (const m of shuffled) {
             if (selected.length === 25) break;
 
-            const hasConflict = m.tags.some(t => forbiddenTags.has(t)) ||
-                                m.conflicts.some(c => usedTags.has(c));
+            const hasConflict = (m.tags || []).some(t => forbiddenTags.has(t)) ||
+                (m.conflicts || []).some(c => usedTags.has(c));
             if (hasConflict) continue;
 
             selected.push(m);
-            m.tags.forEach(t => usedTags.add(t));
-            m.conflicts.forEach(c => forbiddenTags.add(c));
+            (m.tags || []).forEach(t => usedTags.add(t));
+            (m.conflicts || []).forEach(c => forbiddenTags.add(c));
         }
 
         if (selected.length < 25) return null;
@@ -183,7 +198,6 @@ class BingoManager {
         const lineCount = this.calculateCompletedLines();
         const isFullClear = checkedIndices.length === 25;
 
-        // 実績へ保存
         if (window.achievementManager) {
             const newlyUnlocked = await window.achievementManager.recordChallengeCompletion(
                 completedMissions,
@@ -241,6 +255,19 @@ class BingoManager {
         const gridEl = document.getElementById('bingoGrid');
         if (!gridEl) return;
 
+        if (this.loadError) {
+            const isFile = window.location.protocol === 'file:';
+            gridEl.innerHTML = `
+                <div style="grid-column: 1 / -1; padding: 25px; background: rgba(50, 20, 20, 0.9); border: 2px solid #e74c3c; border-radius: 8px; color: #fff; text-align: center;">
+                    <h3 style="color: #ff6b6b; margin-top: 0;">⚠️ ミッションデータを読み込めませんでした</h3>
+                    <p style="line-height: 1.6;">${isFile
+                        ? '現在ローカルファイル（<code>file:///</code>）から直接開かれています。<br>ブラウザのセキュリティ仕様（CORS制限）により外部JSONの取得がブロックされています。<br><br>💡 <strong>ローカルWebサーバー（VS Codeの「Live Server」や <code>npx serve</code> など）経由</strong> または <strong>GitHub Pages</strong> 上でご確認ください。'
+                        : 'ミッションJSONファイルの取得に失敗しました。'}</p>
+                </div>
+            `;
+            return;
+        }
+
         gridEl.innerHTML = '';
 
         this.grid.forEach((m, idx) => {
@@ -292,15 +319,32 @@ class BingoManager {
 
         const m = this.grid[this.selectedIndex];
         const isChecked = this.checkedState[this.selectedIndex];
+        const displayTags = m.displayTags && m.displayTags.length > 0 ? m.displayTags : [];
+
+        const noteHtml = m.note ? `
+            <div class="note-box">
+                💡 <strong>補足</strong><br>${m.note}
+            </div>
+        ` : '';
+
+        const sourceHtml = m.source ? `
+            <div class="card-source">${m.source}</div>
+        ` : '';
+
+        const tagsHtml = displayTags.length > 0 ? `
+            <div class="detail-tags">
+                ${displayTags.map(t => `<span class="tag display-tag">${t}</span>`).join(' ')}
+            </div>
+        ` : '';
 
         const detailHtml = `
             <div class="detail-content">
                 <div class="detail-badge level-${m.level}">難易度 Level ${m.level}</div>
                 <h3 class="detail-title">${m.title}</h3>
                 <p class="detail-desc">${m.description}</p>
-                <div class="detail-tags">
-                    ${m.tags.map(t => `<span class="tag">${t}</span>`).join(' ')}
-                </div>
+                ${noteHtml}
+                ${tagsHtml}
+                ${sourceHtml}
                 <div class="detail-action" style="margin-top: 15px;">
                     <button class="btn-toggle ${isChecked ? 'btn-checked' : 'btn-unchecked'}" id="toggleSquareBtn">
                         ${isChecked ? '✓ 達成解除する' : '達成チェックを入れる'}

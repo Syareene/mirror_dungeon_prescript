@@ -1,0 +1,971 @@
+[
+  {
+    "id": "md_gift_001",
+    "title": "ギフトコレクターⅠ",
+    "description": "E.G.Oギフトを30個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_002",
+    "title": "ギフトコレクターⅡ",
+    "description": "E.G.Oギフトを50個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_003",
+    "title": "ギフトコレクターⅢ",
+    "description": "E.G.Oギフトを75個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_004",
+    "title": "ギフトコレクターⅣ",
+    "description": "E.G.Oギフトを100個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_005",
+    "title": "ギフトコレクターⅤ(実際に動かしてどれくらい確保できるか要チェック)",
+    "description": "E.G.Oギフトを125個以上保有して、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "gift_collector"
+    ],
+    "conflicts": [
+      "gift_collector"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_006",
+    "title": "燃える贈り物Ⅰ",
+    "description": "火傷キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_007",
+    "title": "燃える贈り物Ⅱ",
+    "description": "火傷キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_008",
+    "title": "燃える贈り物Ⅲ",
+    "description": "火傷キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "burn_gift"
+    ],
+    "conflicts": [
+      "burn_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_009",
+    "title": "滴る贈り物Ⅰ",
+    "description": "出血キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_010",
+    "title": "滴る贈り物Ⅱ",
+    "description": "出血キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_011",
+    "title": "滴る贈り物Ⅲ",
+    "description": "出血キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "bleed_gift"
+    ],
+    "conflicts": [
+      "bleed_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_012",
+    "title": "揺れる贈り物Ⅰ",
+    "description": "振動キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_013",
+    "title": "揺れる贈り物Ⅱ",
+    "description": "振動キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_014",
+    "title": "揺れる贈り物Ⅲ",
+    "description": "振動キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "tremor_gift"
+    ],
+    "conflicts": [
+      "tremor_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_015",
+    "title": "裂ける贈り物Ⅰ",
+    "description": "破裂キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_016",
+    "title": "裂ける贈り物Ⅱ",
+    "description": "破裂キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_017",
+    "title": "裂ける贈り物Ⅲ",
+    "description": "破裂キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "rupture_gift"
+    ],
+    "conflicts": [
+      "rupture_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_018",
+    "title": "哀しい贈り物Ⅰ",
+    "description": "沈潜キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_019",
+    "title": "哀しい贈り物Ⅱ",
+    "description": "沈潜キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_020",
+    "title": "哀しい贈り物Ⅲ",
+    "description": "沈潜キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "sinking_gift"
+    ],
+    "conflicts": [
+      "sinking_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_021",
+    "title": "吐き出す贈り物Ⅰ",
+    "description": "呼吸キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_022",
+    "title": "吐き出す贈り物Ⅱ",
+    "description": "呼吸キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_023",
+    "title": "吐き出す贈り物Ⅲ",
+    "description": "呼吸キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "poise_gift"
+    ],
+    "conflicts": [
+      "poise_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_024",
+    "title": "満ちる贈り物Ⅰ",
+    "description": "充電キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_025",
+    "title": "満ちる贈り物Ⅱ",
+    "description": "充電キーワードE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_026",
+    "title": "満ちる贈り物Ⅲ",
+    "description": "充電キーワードE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "charge_gift"
+    ],
+    "conflicts": [
+      "charge_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_027",
+    "title": "斬る贈り物Ⅰ",
+    "description": "斬撃キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "slash_gift"
+    ],
+    "conflicts": [
+      "slash_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_028",
+    "title": "斬る贈り物Ⅱ",
+    "description": "斬撃キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "slash_gift"
+    ],
+    "conflicts": [
+      "slash_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_029",
+    "title": "貫く贈り物Ⅰ",
+    "description": "貫通キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "piece_gift"
+    ],
+    "conflicts": [
+      "piece_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_030",
+    "title": "貫く贈り物Ⅱ",
+    "description": "貫通キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "piece_gift"
+    ],
+    "conflicts": [
+      "piece_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_031",
+    "title": "打つ贈り物Ⅰ",
+    "description": "打撃キーワードE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "blunt_gift"
+    ],
+    "conflicts": [
+      "blunt_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_032",
+    "title": "打つ贈り物Ⅱ",
+    "description": "打撃キーワードE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "blunt_gift"
+    ],
+    "conflicts": [
+      "blunt_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_033",
+    "title": "レアな贈り物Ⅰ",
+    "description": "4ティアE.G.Oギフトを5個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_034",
+    "title": "レアな贈り物Ⅱ",
+    "description": "4ティアE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_035",
+    "title": "レアな贈り物Ⅲ",
+    "description": "4ティアE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_036",
+    "title": "レアな贈り物Ⅳ",
+    "description": "4ティアE.G.Oギフトを20個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_037",
+    "title": "レアな贈り物Ⅴ",
+    "description": "4ティアE.G.Oギフトを25個以上保有して、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "rare_gift"
+    ],
+    "conflicts": [
+      "rare_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_038",
+    "title": "スペシャルな贈り物Ⅰ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを2個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_039",
+    "title": "スペシャルな贈り物Ⅱ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを4個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_040",
+    "title": "スペシャルな贈り物Ⅲ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを6個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_041",
+    "title": "スペシャルな贈り物Ⅳ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを8個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_042",
+    "title": "スペシャルな贈り物Ⅴ",
+    "description": "特定のレシピによる合成でのみ獲得可能な4ティアE.G.Oギフトを10個以上保有して、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "special_gift"
+    ],
+    "conflicts": [
+      "special_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_043",
+    "title": "数量限定な贈り物Ⅰ",
+    "description": "テーマパック限定合成E.G.Oギフトを3個以上保有して、鏡ダンジョンをクリア",
+    "level": 1,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_044",
+    "title": "数量限定な贈り物Ⅱ",
+    "description": "テーマパック限定合成E.G.Oギフトを6個以上保有して、鏡ダンジョンをクリア",
+    "level": 2,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_045",
+    "title": "数量限定な贈り物Ⅲ",
+    "description": "テーマパック限定合成E.G.Oギフトを9個以上保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "limited_gift"
+    ],
+    "conflicts": [
+      "limited_gift"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_046",
+    "title": "すくすく育つ",
+    "description": "植物系のE.G.Oギフトを15個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 薔薇の冠,白い綿花,稲妻の枝,カーミラ,棘の投げ縄,茨の道,赤く染まった綿花,四つ葉のクローバー,快感,縛り付けた枷,安息の地,古木の罠,ミラルカ,茨の早縄,捨てられた枝,色の花びら,桃色の花びらの束,檀香梅の枝,茨の冠,くびき,小枝,貪欲する棘",
+    "source": ""
+  },
+  {
+    "id": "md_gift_047",
+    "title": "鏡世界の動物園",
+    "description": "動物が描かれているE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 地獄蝶の夢,キズモドキ,緋色の蛾の群れ,狐雨,真冬の夜の悪夢,死にたがり,カンタービレ,閉じ込められた蛆虫,子心,安息",
+    "source": ""
+  },
+  {
+    "id": "md_gift_048",
+    "title": "勤勉な囚人",
+    "description": "本のE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 燃え上がる知性,料理の秘伝書,新商品のパンフレット,特別カタログ,体験型プランガイド,デュエル教本 3巻,仕返し帳簿,本国剣譜,盗まれたフィクサー雑誌,仕返し帳簿 : 番外,釘と金槌の本,完全さ,チーフバトラーの秘笈書,近接戦術教本",
+    "source": ""
+  },
+  {
+    "id": "md_gift_049",
+    "title": "7刀流",
+    "description": "剣/刀のE.G.Oギフトを7個以上保有して、鏡ダンジョンをクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "対象E.G.Oギフト: 宣告の瞬間,致誠,短いケインソード,割れた大剣,熱線武器,誰かの蒼い刀,菖蒲剣,壮観,不動,E式次元短剣,絶景,琢磨,刻み込まれた怪文字,涙で研ぎ澄まされた剣,血炎刀",
+    "source": ""
+  },
+  {
+    "id": "md_gift_050",
+    "title": "7つ集めるとどんな願いでも叶えられる石",
+    "description": "E.G.Oギフトである各属性の欠片を全て保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": "ドラゴンボール"
+  },
+  {
+    "id": "md_gift_051",
+    "title": "とある誰かの記憶",
+    "description": "E.G.Oギフト「月の記憶」を保有して、鏡ダンジョンをクリア",
+    "level": 4,
+    "tags": [
+      "own_lunar_memory"
+    ],
+    "conflicts": [
+      "not_own_lunar_memory"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_052",
+    "title": "月はあなたを見つめていない",
+    "description": "E.G.Oギフト「月の記憶」を一度も獲得せずに、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [
+      "not_own_lunar_memory"
+    ],
+    "conflicts": [
+      "own_lunar_memory"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_053",
+    "title": "ダブルムーン",
+    "description": "E.G.Oギフト「月の記憶」を2度入手し(lv5合成用ギフトの名前を引用したい)、鏡ダンジョンをクリア",
+    "level": 5,
+    "tags": [],
+    "conflicts": [
+      "not_own_lunar_memory"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_054",
+    "title": "不自由ない暮らし",
+    "description": "鏡ダンジョンクリア時にコストを1000以上残してクリアする",
+    "level": 1,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_055",
+    "title": "🐶「お金が必要です」",
+    "description": "鏡ダンジョンクリア時にコストを3000以上残してクリアする",
+    "level": 3,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_056",
+    "title": "富と名誉",
+    "description": "鏡ダンジョンクリア時にコストを5000以上残してクリアする",
+    "level": 5,
+    "tags": [
+      "own_cost"
+    ],
+    "conflicts": [
+      "own_cost"
+    ],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_057",
+    "title": "買い物上手",
+    "description": "ショップ利用後にコストが0になるよう買い物をする",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_058",
+    "title": "一期一会",
+    "description": "ショップを訪れるたびに人格を必ず1人以上交換する",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": ""
+  },
+  {
+    "id": "md_gift_059",
+    "title": "複製ウサギは連続切断の夢を見るか？",
+    "description": "味方1名のスキル1とスキル2をショップで全てスキル3に交換してクリア",
+    "level": 3,
+    "tags": [],
+    "conflicts": [],
+    "displayTags": [
+      "ショップ・ギフト収集"
+    ],
+    "note": "",
+    "source": "LoR steam実績"
+  }
+]

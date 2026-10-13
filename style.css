@@ -106,7 +106,7 @@ h2 {
     border: 1px solid #7d2626;
 }
 
-/* --- 入力欄とボタン --- */
+/* --- 入力欄とボタン・セレクト --- */
 .input-section {
     display: flex;
     align-items: center;
@@ -118,6 +118,7 @@ h2 {
 }
 
 input[type="text"],
+select,
 button {
     height: 36px;
     box-sizing: border-box;
@@ -126,12 +127,12 @@ button {
     vertical-align: middle;
 }
 
-input[type="text"] {
-    background: rgba(0, 0, 0, 0.5);
+input[type="text"],
+select {
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid #4e342e;
     color: white;
     padding: 0 10px;
-    width: 300px;
 }
 
 button {
@@ -212,6 +213,7 @@ button:hover {
     border: 1px solid #4e342e;
     border-radius: 6px;
     padding: 15px;
+    position: relative;
 }
 
 .bingo-right-column h3 {
@@ -304,7 +306,7 @@ button:hover {
 .bingo-cell.level-4 .cell-level { background: #4a148c; color: #ce93d8; }
 .bingo-cell.level-5 .cell-level { background: #b71c1c; color: #ff8a80; }
 
-/* 詳細パネル */
+/* 詳細パネル & 補助テキスト(note) & 出典(source) */
 .detail-empty {
     color: #888;
     font-size: 0.9em;
@@ -337,17 +339,43 @@ button:hover {
     font-size: 0.95em;
     line-height: 1.5;
     color: #ddd;
+    margin-bottom: 10px;
 }
 
+/* 補助テキスト (note) のスタイル */
+.note-box {
+    background: rgba(80, 20, 20, 0.4);
+    border-left: 3px solid #ffcc00;
+    padding: 8px 12px;
+    font-size: 0.85em;
+    color: #ffe082;
+    line-height: 1.4;
+    border-radius: 0 4px 4px 0;
+    margin: 10px 0;
+}
+
+/* 出典・参考元 (source) のスタイル */
+.card-source {
+    font-size: 0.75em;
+    color: #888;
+    text-align: right;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.detail-tags {
+    margin-top: 10px;
+}
 .detail-tags .tag {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #555;
-    padding: 2px 6px;
+    background: rgba(255, 204, 0, 0.15);
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    padding: 2px 8px;
     border-radius: 3px;
-    font-size: 0.75em;
-    color: #bbb;
+    font-size: 0.8em;
     margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 .btn-toggle {
@@ -383,6 +411,8 @@ button:hover {
     z-index: 1000;
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
     transition: bottom 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .mobile-drawer.open {
@@ -412,12 +442,12 @@ button:hover {
     padding: 0 10px;
 }
 
-/* --- 実績画面 スタイル --- */
+/* --- 実績画面 スタイル & コントロールバー --- */
 .achievements-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .summary-card {
@@ -457,6 +487,31 @@ button:hover {
     transition: width 0.4s ease;
 }
 
+/* ソート・フィルターコントロールバー */
+.achievement-controls {
+    display: flex;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #4e342e;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-group label {
+    font-size: 0.9em;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
 .achievement-level-group {
     margin-bottom: 25px;
 }
@@ -465,6 +520,8 @@ button:hover {
     margin-bottom: 10px;
     color: #ffcc00;
     font-size: 1.2em;
+    border-bottom: 1px dashed #4e342e;
+    padding-bottom: 5px;
 }
 
 .level-count {
@@ -480,12 +537,18 @@ button:hover {
 
 .achievement-card {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #4e342e;
     border-radius: 6px;
     padding: 12px;
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.achievement-card:hover {
+    border-color: #795548;
 }
 
 .achievement-card.done {
@@ -494,13 +557,20 @@ button:hover {
 }
 
 .achievement-card.locked {
-    opacity: 0.5;
+    opacity: 0.6;
+}
+
+.card-top-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .card-status-icon {
-    font-size: 1.5em;
-    width: 30px;
+    font-size: 1.4em;
+    width: 25px;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .card-info {
@@ -514,9 +584,50 @@ button:hover {
 }
 
 .card-desc {
-    font-size: 0.8em;
+    font-size: 0.82em;
     color: #aaa;
-    margin-top: 3px;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.card-tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.card-tags .tag {
+    font-size: 0.7em;
+    padding: 1px 5px;
+    background: rgba(255, 204, 0, 0.1);
+    border: 1px solid rgba(255, 204, 0, 0.4);
+    color: #ffcc00;
+    border-radius: 3px;
+}
+
+/* ツールチップ付き補足テキスト */
+.note-toggle-btn {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 0.75em;
+    color: #00e5ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card-note-detail {
+    display: none;
+    font-size: 0.8em;
+    background: rgba(40, 20, 20, 0.8);
+    border-left: 2px solid #00e5ff;
+    padding: 6px 8px;
+    margin-top: 6px;
+    color: #e0f7fa;
+    border-radius: 0 4px 4px 0;
+}
+.card-note-detail.show {
+    display: block;
 }
 
 /* 隠し実績カード */
@@ -721,11 +832,11 @@ footer {
     }
 
     .bingo-right-column {
-        display: none; /* スマホでは右カラムを隠し、ドロワーに任せる */
+        display: none;
     }
 
     .mobile-drawer {
-        display: block; /* ドロワーを有効化 */
+        display: block;
     }
 
     .bingo-grid {
